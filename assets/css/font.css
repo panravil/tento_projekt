@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Bong-Semidbold;
+    src: url("../font/Boing/Boing-Semibold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: Bong-Light;
+    src: url('../font/Boing/Boing-Light.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
