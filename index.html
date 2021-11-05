@@ -1,202 +1,93 @@
 <!DOCTYPE html>
 <html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
-<html lang="cz">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Internal Stylesheet -->
-        <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
-        <link href="./assets/css/font.css" rel="stylesheet" type="text/css">
-        
-        <!-- External Stylesheet -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+.bgimg {
+  background-image: url('forestbridge.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
 
-        <!-- External Script -->
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    
-    </head>
-    <body>
-        <header class="header-contain">
-            <div class="logo-img">
-                <img src="./assets/images/Logo.png">
-            </div>
-            <div class="menu">
-                <a href="">O Tento</a>
-                <a href="">Jak soutěžit </a>
-                <a href="">Pravidla</a>
-                <a href="">Výherci</a>
-                <a href="">KONTAKT</a>
-            </div>
-        </header>
-        <main class="index">
-            <div class="banner-img">
-                <img class="w-100" src="./assets/images/header-img.png">
-                <h2 class="banner-text-sm">Vyhrajte každý týden <br> pobyt v klidu lesa v <br> hodnotě 40 000 Kč!</h2>
-                <h4 class="banner-text-bi">Nebo závěsné křeslo na zahradu.</h4>
-                <div class="banner-text-rd">
-                    <div>Soutěžíme<br>každý týden o:<br> 1x pobyt v lese<br>5x závěsné křeslo</div>
-                    <div>V období<br>1. 2. – 28. 3.<br>2022</div>
-                </div>
-                <div class="banner-text-end">Právě probíhá 2. týden soutěže <label>(8. 2. – 14. 2. 2022),</label> <br>
-                    další výherce losujeme <label>15. 2. 2022.</label> 
-                </div>
-                <div class="banner-img-next">
-                    <a href="#sec1"><img src="./assets/images/next.png"></a>
-                </div>
-            </div>
-            <section class="sec1" id="sec1">
-                <div class="sec1-title">
-                    Jak soutěžit? 
-                </div>
-                <div class="sec1-content">
-                    <div>
-                        <img src="./assets/images/Functionality.png">
-                    </div>
-                    <div class="sec1-right">
-                        <div>
-                            Vyhrajte
-                        </div>
-                        <div>
-                            týdenní pobyt v udržitelném <br>ubytování v českém lese<br> nebo<br>závěsné křeslo na zahradu.
-                        </div>
-                        <div>
-                            <img src="./assets/images/sec1-right.png">
-                        </div>
-                        <div>
-                            <img class="m-t-5m" src="./assets/images/Block 2_ How TO.png">
-                        </div>
-                        <div>
-                            Více o ubytování
-                            <p>zde.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="sec1-next">
-                    <a href="#sec2">
-                        <img src="./assets/images/next.png">    
-                    </a>
-                </div>
-            </section>
-            <section class="sec2" id="sec2">
-                <div class="sec2-title">
-                    Vyplňte formulář
-                </div>
-                <div class="sec2-content">
-                    <table class="data-in">
-                        <tr>
-                            <td>Jméno:</td>
-                            <td>Příjmení:</td>
-                        </tr>
-                        <tr>
-                            <td><input></td>
-                            <td><input></td>
-                        </tr>
-                        <tr>
-                            <td>E-mail:</td>
-                            <td>Telefon: </td>
-                        </tr>
-                        <tr>
-                            <td><input></td>
-                            <td><input></td>
-                        </tr>
-                        <tr>
-                            <td>PSČ</td>
-                            <td>Kód z účtenky:</td>
-                        </tr>
-                        <tr>
-                            <td><input></td>
-                            <td><input></td>
-                        </tr>
-                        <tr>
-                            <td><button class="submit">Odeslat</button> </td>
-                            <td>
-                                Souhlasím se zpracováním <span>osobních údajů.</span><br>  
-                                <input type="checkbox" class="question-check">
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="sec2-next">
-                    <a href="#sec3">
-                        <img src="./assets/images/sec2-next.png">
-                    </a>
-                </div>
-            </section>
-            <section class="sec3" id="sec3">
-                <div class="sec1-title">
-                    O značce Tento
-                </div>
-                <div class="sec3-title-content">
-                    <div>Vítěz Volby spotřebitelů</div>
-                    <img src="./assets/images/VS 21 logo CZ outline_kruh 1.png">
-                </div>
-                <div class="move">
-                    <img src="./assets/images/Movie.png">
-                </div>
-                <div class="brand">
-                    <div>
-                        <img src="./assets/images/image 1.png">
-                        <div class="brand-title">O lesy se staráme.</div>
-                        <div class="brand-content">Je pro nás důležité, aby <br> naše dřevo pocházelo z <br>udržitelně spravovaných <br>
-                             lesů, které rostou více, než <br> jsou využívány, a v nichž je <br>
-                             udržována biodiverzita. Se <br> surovinami zacházíme<br>šetrně.</div>
-                    </div>
-                    <div>
-                        <img src="./assets/images/image 2.png">
-                        <div class="brand-title">Udržitelnost v každé<br>
-                        fázi výroby.</div>
-                        <div class="brand-content">Udržitelnost zohledňujeme při <br>
-                            každém kroku naší výroby. <br> Proto také optimalizujeme <br>
-                            využívání vody a energie, aby <br> bylo co nejefektivnější.</div>
-                    </div>
-                    <div>
-                        <img src="./assets/images/image 3.png">
-                        <div class="brand-title">Na obalech záleží.</div>
-                        <div class="brand-content">Dbáme na to, aby také naše 
-                            <br>obaly byly udržitelné. Za<br> poslední dva roky jsme o 17 % <br>
-                            snížili podíl plastů v obalech,<br> 
-                            ve kterých jsou baleny výrobky <br>
-                            naší značky. Naše obaly jsou <br> 100 % recyklovatelné. </div>
-                    </div>
-                    <div>
-                        <img src="./assets/images/image 4.png">
-                        <div class="brand-title">Vyráběné blízko vás.</div>
-                        <div class="brand-content">Všechny produkty vyrábíme v <br>
-                            rozumné vzdálenosti od zdrojů <br>
-                            surovin a od našich odběratelů.<br>
-                            Menší vzdálenost znamená <br>
-                            menší potřebu přepravy zboží a<br>
-                            tím pádem i snížení emisí CO2.</div>
-                    </div>
-                </div>
-            </section>
-            <section class="sec4">
-                <div class="sec2-title">
-                    Kontakt
-                </div>
-                <div>
-                    V případě jakýchkoliv dotazů či nejasností nás neváhejte kontaktovat.
-                </div>
-                <div class="flex">
-                    <div>lorem@ipsum.com</div>
-                    <div>+420 000 000</div>
-                </div>
-                <div>
-                    Informace o zpracování osobních údajů a využití cookies naleznete
-                    <label>zde.</label>
-                </div>
-            </section>
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
 
-            <footer>
-                <div class="footer">
-                    <img src="./assets/images/facebook.png">
-                    <img src="./assets/images/instagram (1).png">
-                    <img src="./assets/images/Layer 1.png">
-                </div>
-            </footer>
-        </main>
-    </body>
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p></p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p>35 days left</p>
+  </div>
+  <div class="bottomleft">
+    <p></p>
+  </div>
+</div>
+
+</body>
 </html>
-</html>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+

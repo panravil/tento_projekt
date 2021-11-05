@@ -1,52 +1,60 @@
-body{
+body {
     margin: 0px;
 }
-.header-contain{
+
+.header-contain {
     max-width: 1340px;
     margin: auto;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
-
 }
-.menu{
+
+.menu {
     display: flex;
     align-items: center;
     font-size: 18px;
 }
-.menu a{
+
+.menu a {
     margin-right: 60px;
     color: black;
     text-decoration: none;
     font-size: 18px;
-    font-family: 'Boing-Semidbold' ,sans-serif;
+    font-family: 'Boing-Medium', sans-serif;
 }
-.index{
+
+.index {
     max-width: 1920px;
     margin: auto;
 }
-.banner-img{
+
+.banner-img {
     width: 100%;
     position: relative;
     height: auto;
 }
-.w-100{
+
+.w-100 {
     width: 100%;
 }
-.banner-text-sm{
-    font-family: 'Boing-Semidbold' ,sans-serif;
+
+.banner-text-sm {
+    font-family: 'Boing-Medium', sans-serif;
     font-size: 48px;
     position: absolute;
     top: 150px;
     color: white;
     margin: 0;
     left: 15%;
-	line-height: initial;
+    line-height: initial;
 }
-.banner-text-bi{
-    font-family: 'Boing-Light' ,sans-serif;
+
+.banner-text-bi {
+    font-family: 'Boing-Light', sans-serif;
     font-size: 37px;
     position: absolute;
     top: 300px;
@@ -55,15 +63,16 @@ header{
     left: 15%;
     font-weight: normal;
 }
-.banner-text-rd{
+
+.banner-text-rd {
     display: flex;
     width: 400px;
-    justify-content:space-between;
+    justify-content: space-between;
     position: absolute;
     top: 420px;
     left: 15%;
-
 }
+
 .banner-text-rd div:first-child {
     display: flex;
     width: 190px;
@@ -78,12 +87,13 @@ header{
     align-items: center;
     line-height: 23px;
 }
-.banner-text-rd div:last-child{
+
+.banner-text-rd div:last-child {
     width: 190px;
     height: 190px;
     display: flex;
     font-size: 26px;
-    font-family: 'Boing-Semidbold' , sans-serif;
+    font-family: 'Boing-Medium', sans-serif;
     color: white;
     text-align: center;
     align-items: center;
@@ -91,21 +101,24 @@ header{
     border-radius: 50%;
     justify-content: center;
     font-weight: normal;
-	line-height: initial;
+    line-height: initial;
 }
-.banner-text-end{
-    font-family: 'Boing-Light' , sans-serif;
+
+.banner-text-end {
+    font-family: 'Boing-Light', sans-serif;
     position: absolute;
     bottom: 40px;
     left: 15%;
     font-size: 18px;
     color: #d7e0d8;
 }
-.banner-text-end label{
-    font-family: 'Boing-Semidbold', sans-serif;
-    color:white;
+
+.banner-text-end label {
+    font-family: 'Boing-Medium', sans-serif;
+    color: white;
 }
-.banner-img-next{
+
+.banner-img-next {
     position: absolute;
     bottom: 30px;
     width: 100%;
@@ -113,46 +126,55 @@ header{
     display: flex;
     justify-content: center;
 }
-.sec1{
+
+.sec1 {
     background-color: #6fa287;
     margin-top: -15px;
 }
-.sec1-title{
-    font-family: 'Boing-Semidbold',sans-serif;
+
+.sec1-title {
+    font-family: 'Boing-Medium', sans-serif;
     font-size: 48px;
-    color:white;
+    color: white;
     display: flex;
     justify-content: center;
     padding-top: 35px;
 }
-.sec1-content{
+
+.sec1-content {
     display: flex;
     padding: 50px 15%;
     justify-content: space-between;
 }
-.sec1-right{
+
+.sec1-right {
     text-align: center;
 }
-.sec1-right div:first-child{
+
+.sec1-right div:first-child {
     margin-top: 10px;
-    font-family: 'Boing-Semidbold' , sans-serif;
+    font-family: 'Boing-Medium', sans-serif;
     font-size: 41px;
     color: white;
 }
-.sec1-right div:nth-child(2){
-    font-family: 'Boing-Light',sans-serif;
+
+.sec1-right div:nth-child(2) {
+    font-family: 'Boing-Light', sans-serif;
     font-size: 22px;
-    color:white;
+    color: white;
     margin-top: 30px;
     font-weight: normal;
 }
-.sec1-right div:nth-child(3){
+
+.sec1-right div:nth-child(3) {
     margin-top: 30px;
 }
-.sec1-right div:nth-child(4){
+
+.sec1-right div:nth-child(4) {
     margin-top: -5px;
 }
-.sec1-right div:nth-child(5){
+
+.sec1-right div:nth-child(5) {
     margin-top: 10px;
     color: #ffff;
     font-family: 'Boing-Light', sans-serif;
@@ -160,74 +182,86 @@ header{
     font-size: 22px;
     margin-left: 55px;
 }
-.sec1-right div:nth-child(5) p{
+
+.sec1-right div:nth-child(5) p {
     margin: 0;
     text-decoration: underline;
 }
-.sec1-next{
+
+.sec1-next {
     text-align: center;
     margin-top: -80px;
     padding-bottom: 20px;
 }
-.sec2{
+
+.sec2 {
     padding: 20px 15%;
 }
-.sec2-title{
-    font-family: 'Boing-Semidbold',sans-serif;
+
+.sec2-title {
+    font-family: 'Boing-Medium', sans-serif;
     font-size: 48px;
     color: #006944;
     text-align: center;
     padding-top: 50px;
 }
-.sec2-content{
+
+.sec2-content {
     margin-top: 70px;
     border: 1px solid #006944;
     padding: 100px;
 }
-.data-in{
+
+.data-in {
     width: 100%;
     font-size: 14px;
-    font-family: 'Boing-Semidbold';
+    font-family: 'Boing-Medium';
     color: #006944;
 }
-.data-in td{
-    padding:5px 30px 5px 0px;
+
+.data-in td {
+    padding: 5px 30px 5px 0px;
     width: 500px;
-    
 }
-.data-in input{
+
+.data-in input {
     width: 100%;
     height: 46px;
     border: 2px solid #e4e4e4;
-	
 }
-.submit{
+
+.submit {
     padding: 20px 50px;
-    background-color:transparent;
+    background-color: transparent;
     color: #006944;
-    font-family: 'Boing-Semidbold',sans-serif;
+    font-family: 'Boing-Medium', sans-serif;
     font-size: 16px;
     border: 1px solid #006944;
     border-radius: 5px;
 }
-.submit:focus{
+
+.submit:focus {
     background-color: #d4e0da;
 }
-.question-check{
+
+.question-check {
     width: 15px !important;
     height: 15px !important;
     margin: 0;
     margin-top: 10px;
 }
-.sec2-next{
+
+.sec2-next {
     text-align: center;
     margin-top: 45px;
 }
-.sec3{
+
+.sec3 {
     background-color: #006944;
     padding-top: 25px;
 }
-.sec3-title-content{
+
+.sec3-title-content {
     display: flex;
     justify-content: center;
     font-family: 'Boing-Light', sans-serif;
@@ -236,87 +270,102 @@ header{
     color: #d4e0da;
     margin-top: 15px;
 }
-.sec3-title-content div{
+
+.sec3-title-content div {
     padding-right: 10px;
 }
-.move{
+
+.move {
     margin-top: 30px;
     display: flex;
     justify-content: center;
 }
-.brand{
+
+.brand {
     display: flex;
     padding: 80px 15%;
     justify-content: space-between;
 }
-.brand-title{
-    font-family: 'Boing-Semidbold',sans-serif;
+
+.brand-title {
+    font-family: 'Boing-Medium', sans-serif;
     font-size: 20px;
     margin-top: 30px;
     color: white;
     text-align: left !important;
-	letter-spacing: 3.2px;
+    letter-spacing: 3.2px;
     line-height: 25px;
 }
-.brand div{
+
+.brand div {
     text-align: center;
 }
-.brand-content{
+
+.brand-content {
     text-align: left !important;
     margin-top: 35px;
-    font-family: 'Boing-Light',sans-serif;
+    font-family: 'Boing-Light', sans-serif;
     font-size: 18px;
     color: #a3beb2;
     line-height: 30px;
 }
-.sec4{
+
+.sec4 {
     padding: 10px 0 50px 0px;
     text-align: center;
 }
-.sec4 div:nth-child(2){
-    font-family: 'Boing-Light',sans-serif;
+
+.sec4 div:nth-child(2) {
+    font-family: 'Boing-Light', sans-serif;
     font-size: 23px;
     color: #006944;
     margin-top: 35px;
 }
-.sec4 div:nth-child(3){
-    font-family: 'Boing-Semidbold';
+
+.sec4 div:nth-child(3) {
+    font-family: 'Boing-Medium';
     font-size: 20px;
     color: #006944;
     margin-top: 35px;
     display: flex;
     justify-content: center;
 }
-.flex div:last-child{
+
+.flex div:last-child {
     margin-left: 50px;
     margin-top: 0px;
-    font-family: 'Boing-Semidbold',sans-serif;
+    font-family: 'Boing-Medium', sans-serif;
     font-size: 20px;
 }
-.sec4 div:nth-child(4){
-    font-family: 'Boing-Light',sans-serif;
+
+.sec4 div:nth-child(4) {
+    font-family: 'Boing-Light', sans-serif;
     font-size: 23px;
     color: #006944;
     margin-top: 35px;
 }
-.sec4 div:nth-child(4) label{
-    font-family: 'Boing-Light',sans-serif;
+
+.sec4 div:nth-child(4) label {
+    font-family: 'Boing-Light', sans-serif;
     font-size: 23px;
     color: #006944;
     text-decoration: underline;
 }
-footer{
+
+footer {
     height: 80px;
     background-color: #6fa287;
     text-align: center;
 }
-.footer{
+
+.footer {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
-.footer img{
+
+.footer img {
     margin: 0px 30px;
     width: 50px;
 }
