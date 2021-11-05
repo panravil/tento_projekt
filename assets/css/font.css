@@ -1,13 +1,73 @@
 @font-face {
-    font-family: Bong-Semidbold;
-    src: url("../font/Boing/Boing-Semibold.otf") format("opentype");
+    font-family: Boing-Semidbold;
+    src: url("../font/Boing/Boing-Semibold Italic.otf") format("opentype");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 @font-face{
-    font-family: Bong-Light;
+    font-family: Boing-Light;
     src: url('../font/Boing/Boing-Light.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: Boing-Bold Italic;
+    src: url('../font/Boing/Boing-Bold Italic.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: Boing-Bold;
+    src: url('../font/Boing/Boing-Bold.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: Boing-Italic;
+    src: url('../font/Boing/Boing-Italic.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: Boing-Light Italic;
+    src: url('../font/Boing/Boing-Light Italic.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: Boing-Medium Italic;
+    src: url('../font/Boing/Boing-Medium Italic.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: Boing-Medium;
+    src: url('../font/Boing/Boing-Medium.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: Boing-Regular;
+    src: url('../font/Boing/Boing-Regular.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: Boing-Semibold Italic;
+    src: url('../font/Boing/Boing-Semibold Italic.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: Boing-Thin Italic;
+    src: url('../font/Boing/Boing-Thin Italic.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: Boing-Thin;
+    src: url('../font/Boing/Boing-Thin.otf') format('opentype');
     font-style: normal;
     font-display: swap;
 }
