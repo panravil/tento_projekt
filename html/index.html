@@ -22,6 +22,25 @@
             <div class="logo-img">
                 <img src="./assets/images/Logo.png">
             </div>
+                
+            <div class="header-content">          
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="mobile-menu mhide">
+                <ul class="list-items">
+                    <li class="list-item"><a href="about-us.html">O Tento</a></li>
+                    <li class="list-item"><a href="product-aesthefill.html">Jak soutěžit</a></li>
+                    <li class="list-item"><a href="rad.html">Pravidla</a></li>
+                    <li class="list-item"><a href="resource.html">Výherci</a></li>
+                    <li class="list-item"><a href="contact-us.html">KONTAKT</a></li>
+                </ul>
+            </div>
+
             <div class="menu">
                 <a href="">O Tento</a>
                 <a href="">Jak soutěžit </a>
@@ -32,7 +51,7 @@
         </header>
         <main class="index">
             <div class="banner-img">
-                <img class="w-100" src="./assets/images/header-img.png">
+                <img class="w-100p" src="./assets/images/header-img.png">
                 <h2 class="banner-text-sm">Vyhrajte každý týden <br> pobyt v klidu lesa v <br> hodnotě 40 000 Kč!</h2>
                 <h4 class="banner-text-bi">Nebo závěsné křeslo na zahradu.</h4>
                 <div class="banner-text-rd">
@@ -111,6 +130,54 @@
                         </tr>
                         <tr>
                             <td><button class="submit">Odeslat</button> </td>
+                            <td>
+                                Souhlasím se zpracováním <span>osobních údajů.</span><br>  
+                                <input type="checkbox" class="question-check">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class="mobile-in">
+                        <tr>
+                            <td>Jméno:</td>
+                        </tr>
+                        <tr>
+                            <td><input></td>
+                        </tr>
+                        <tr>
+                            <td>Příjmení:</td>
+                        </tr>
+                        <tr>
+                            <td><input></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail:</td>
+                        </tr>
+                        <tr>
+                            <td><input></td>
+                        </tr>
+                        <tr>
+                            <td>Telefon: </td>
+                        </tr>
+                        <tr>
+                            <td><input></td>
+                        </tr>
+                        <tr>
+                            <td>PSČ</td>
+                        </tr>
+                        <tr>
+                            <td><input></td>
+                        </tr>
+                        <tr>
+                            <td>Kód z účtenky:</td>
+                        </tr>
+                        <tr>
+                            <td><input></td>
+                        </tr>
+                        <tr>
+                            <td><button class="mobile-submit">Odeslat</button> </td>
+                        </tr>
+                        <tr>
                             <td>
                                 Souhlasím se zpracováním <span>osobních údajů.</span><br>  
                                 <input type="checkbox" class="question-check">
@@ -196,6 +263,19 @@
                     <img src="./assets/images/Layer 1.png">
                 </div>
             </footer>
+
+            <!-- <script src="./assets/js/jquery-3.2.1.min.js"></script> 
+            <script src="./assets/js/bootstrap.min.js"></script>  -->
+            <script src="./assets/js/wow.min.js"></script> 
+            <script>
+                new WOW().init();
+                $(document).ready(function(){
+                    $('.hamburger').on('click',function(){
+                        $(".mobile-menu").toggleClass("mhide").toggleClass("mshow");
+                    });
+                    
+                });
+            </script>
         </main>
     </body>
 </html>
