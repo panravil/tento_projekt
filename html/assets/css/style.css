@@ -409,7 +409,7 @@ tr td:nth-child(1){
 	z-index: 1000;
     opacity: 0.93;
     display: flex !important;
-    top: 90px;
+    top: 89px;
 }
 .mobile-menu .list-items {
 	flex-direction: column;
