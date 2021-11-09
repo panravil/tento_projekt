@@ -29,6 +29,19 @@ header {
     font-family: 'Boing-Medium', sans-serif;
 }
 
+.arrow-pink{
+    width: auto;
+    position: absolute;
+    right: -31.5px;
+    bottom: 111px;
+}
+
+.arrow-down{
+    display: none;
+}
+.sec1-content div:first-child {
+    position: relative;
+}
 .index {
     max-width: 1920px;
     margin: auto;
@@ -38,11 +51,18 @@ header {
     width: 100%;
     position: relative;
     height: auto;
+    background-image: url(../images/header-img.png);
+    height: calc(100vh - 84px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
 }
 
-.w-100p {
+/* .w-100p {
     width: 100%;
-}
+    height: calc(100vh - 84px);
+    object-fit: cover;
+} */
 
 .banner-text-sm {
     font-family: 'Boing-Medium', sans-serif;
@@ -439,11 +459,20 @@ tr td:nth-child(1){
     font-size: 18px;
 }
 
+.brand img{
+    width: 150px;
+}
+
 @media only screen and (max-width: 1440px) {
     .banner-text-sm{
         font-size: 37px;
         left: 10%;
         top: 100px;
+    }
+    .arrow-pink{
+        width: 56px !important;
+        right: 13px;
+        bottom: 79px;
     }
     .banner-text-bi{
         font-size: 31px;
@@ -496,33 +525,39 @@ tr td:nth-child(1){
 
 @media only screen and (max-width: 1199px) {
 
+    .arrow-pink{
+        right: 53px;
+        bottom: 23px;
+        width: 50px !important;
+    }
+
     .move img{
         width: 80%;
     }
     .banner-text-sm{
-        font-size: 28px;
-        top: 60px;
+        /* font-size: 28px;
+        top: 60px; */
     }
     .banner-text-bi{
-        font-size: 25px;
-        top: 150px;
+        /* font-size: 25px;
+        top: 150px; */
     }
     .banner-text-rd{
-        top: 195px;
+        /* top: 195px; */
     }
     .banner-text-rd div:first-child{
-        width: 130px;
+        /* width: 130px;
         height: 130px;
         font-size: 14px;
-        line-height: initial;
+        line-height: initial; */
     }
     .banner-text-rd div:last-child {
-        width: 130px;
+        /* width: 130px;
         height: 130px;
-        font-size: 14px;
+        font-size: 14px; */
     }
     .banner-text-rd {
-        width: 280px;
+        /* width: 280px; */
     }
     .banner-text-end{
         font-size: 14px;
@@ -576,6 +611,14 @@ tr td:nth-child(1){
     a img{
         width: 40px;
     }
+    .sec1-content div:first-child img{
+        width: 279px;
+    }
+    .arrow-pink{
+        bottom: 59px;
+        right: -23px;
+        width: 45px !important;
+    }
     .banner-img-next{
         bottom: 15px;
     }
@@ -602,11 +645,48 @@ tr td:nth-child(1){
     .menu{
         display: none;
     }
+    .arrow-down{
+        display: block;
+        width: 59px !important;
+        position: absolute;
+        right: 0px;
+        bottom: -27px;
+    }
+    .sec1-content div:first-child{
+        width: 370px;
+        margin: auto;
+
+    }
+    .sec1-content{
+        padding-top: 35px;
+        display: block;
+        text-align: center;
+    }
+    .sec1-content div:first-child img{
+        width: 370px;
+    }
     .header-content {
 		display: flex;
 		padding: 10px 0 0 0;
 		justify-content: space-between;
 	}
+    .sec1-next {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .sec1-right{
+        margin-top: 30px;
+    }
+    .sec1-right div:nth-child(5) {
+        width: 100%;
+        margin-left: 0;
+    }
+    .arrow-pink{
+        display: none;
+    }
+
     .hamburger {
         display: block;
     }
@@ -622,21 +702,18 @@ tr td:nth-child(1){
 }
 @media only screen and (max-width: 576px) {
     .banner-text-sm{
-        font-size: 21px;
-        top: 30px;
-        left: 5%;
+        font-size: 28px;
+        top: 60px;
+    }
+    
+    .banner-text-bi{
+        font-size: 22px;
+        top: 150px;
     }
     .logo-img{
         padding-left: 10px;
     }
-    .banner-text-bi{
-        font-size: 20px;
-        top: 100px;
-        left: 5%;
-    }
-    .banner-text-rd{
-        top: 170px;
-    }
+  
     .banner-text-end{
         left: 10px;
         bottom: 10px;
@@ -650,12 +727,17 @@ tr td:nth-child(1){
         overflow: hidden;
     }
     .banner-text-rd{
+        top: 260px;
         left: 0;
         width: 100%;
         justify-content: center;
     }
     .banner-img-next {
         bottom: 25px;
+    }
+    .arrow-down{
+        width: 47px!important;
+        right: 35px;
     }
     .sec1-title{
         font-size: 35px;
@@ -665,19 +747,19 @@ tr td:nth-child(1){
         display: block;
         text-align: center;
     }
-    .sec1-content div:first-child{
-        padding-left: 25px;
-    }
+
     .sec1-right{
         padding-top: 30px;
     }
+
     .sec1-next{
         margin: auto;
         width: 100%;
         display: flex;
         justify-content: center;
-
+    
     }
+
     .sec1-right div:nth-child(3) img{
         width: 40px;
     }
@@ -707,9 +789,7 @@ tr td:nth-child(1){
     .sec4 div:nth-child(3){
         font-size: 16px;
     }
-    .brand img{
-        width: 60px;
-    }
+    
     .data-in{
         display: none;
     }
@@ -751,10 +831,10 @@ tr td:nth-child(1){
         line-height: 25px;
     }
     .sec1-content{
-        padding: 30px 5%;
+        padding: 30px 0;
     }
     .sec1-content div:first-child img{
-        width: 100%;
+        width: 300px;
     }
     .sec4 div:nth-child(3){
         margin-top: 20px;
