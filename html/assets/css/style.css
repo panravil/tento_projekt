@@ -1,12 +1,22 @@
 body {
-    margin: 0px;
-    /* overflow-x: hidden; */
-
+    max-width: 1920px;
+    margin: auto !important;
 }
 
 .header-contain {
-    max-width: 1340px;
-    margin: auto;
+    width: 70%;
+    margin: 0 15%;
+}
+.sheep{
+    position: absolute;
+    right: 5%;
+    bottom:-10px;
+    width: 30%;
+    height: auto;
+}
+.sheep img{
+    width: 100%;
+    height: auto;
 }
 
 header {
@@ -22,7 +32,7 @@ header {
 }
 
 .menu a {
-    margin-right: 60px;
+    margin-left: 60px;
     color: black;
     text-decoration: none;
     font-size: 18px;
@@ -30,10 +40,9 @@ header {
 }
 
 .arrow-pink{
-    width: auto;
     position: absolute;
-    right: -31.5px;
-    bottom: 111px;
+    right: -31px;
+    bottom: 0px;
 }
 
 .arrow-down{
@@ -51,19 +60,59 @@ header {
     width: 100%;
     position: relative;
     height: auto;
-    background-image: url(../images/header-img.png);
+    background-image: url(../images/header-img.jpg);
     height: calc(100vh - 84px);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
 }
 
-/* .w-100p {
-    width: 100%;
-    height: calc(100vh - 84px);
-    object-fit: cover;
-} */
+.compete-bule{
+    position: relative;
+    width: 400px;
+    height: 277px;
+    background-color: #86a3c8;
+    text-align: center;
+    z-index: 1;
+}
 
+.compete-pink{
+    width: 400px;
+    height: 277px;
+    background-color: #daaba2;
+    text-align: center;
+    position: relative;
+}
+.compete-bill{
+    margin-top: 10px;
+}
+.compete-bill img{
+    width: 95px;
+}
+.compete-text{
+    font-family: 'Boing-Light',sans-serif;
+    font-size: 22px;
+    color: white;
+    line-height: 26px;
+}
+.compete-title{
+    font-size: 41px;
+    font-family: 'Boing-Medium' , sans-serif;
+    color: white;
+    padding-top: 20px;
+}
+.compete-sheep{
+    width: 100%;
+}
+.compete-sheep img{
+    margin-top: 10px;
+    width: 220px;
+}
+.arrow-blue{
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+}
 .banner-text-sm {
     font-family: 'Boing-Medium', sans-serif;
     font-size: 48px;
@@ -72,7 +121,8 @@ header {
     color: white;
     margin: 0;
     left: 15%;
-    line-height: initial;
+    line-height: 50px;
+    letter-spacing: 2px;
 }
 
 .banner-text-bi {
@@ -149,9 +199,16 @@ header {
     justify-content: center;
 }
 
+.banner-img-next img{
+    width: 54px;
+}
+
+.sec1-next img{
+    width: 54px;
+}
 .sec1 {
     background-color: #6fa287;
-    margin-top: -15px;
+
 }
 
 .sec1-title {
@@ -279,7 +336,10 @@ header {
     text-align: center;
     margin-top: 45px;
 }
-
+.sec2-next img{
+    width: 54px;
+    height: 54px;
+}
 .sec3 {
     background-color: #006944;
     padding-top: 25px;
@@ -293,6 +353,11 @@ header {
     align-items: center;
     color: #d4e0da;
     margin-top: 15px;
+}
+
+.sec3-title-content img{
+    width: 59px;
+    height: 59px;
 }
 
 .sec3-title-content div {
@@ -317,8 +382,8 @@ header {
     margin-top: 30px;
     color: white;
     text-align: left !important;
-    letter-spacing: 3.2px;
     line-height: 25px;
+    text-transform: uppercase;
 }
 
 .brand div {
@@ -430,6 +495,7 @@ tr td:nth-child(1){
     opacity: 0.93;
     display: flex !important;
     top: 89px;
+    left: 0px;
 }
 .mobile-menu .list-items {
 	flex-direction: column;
@@ -468,11 +534,12 @@ tr td:nth-child(1){
         font-size: 37px;
         left: 10%;
         top: 100px;
+        line-height: 40px;
     }
-    .arrow-pink{
-        width: 56px !important;
-        right: 13px;
-        bottom: 79px;
+    
+    .header-contain{
+        width: 80%;
+        margin: 0 10%;
     }
     .banner-text-bi{
         font-size: 31px;
@@ -508,9 +575,7 @@ tr td:nth-child(1){
     .banner-text-rd{
         width: 310px;
     }
-    .logo-img{
-        padding-left: 10%;
-    }
+
     .sec1-right div:nth-child(5){
         font-size: 18px;
         margin-left: 30px;
@@ -518,47 +583,19 @@ tr td:nth-child(1){
     .sec1-right div:nth-child(4) img{
         width: 360px;
     }
-    .sec1-content div:first-child img{
-        width: 90%;
-    }
 }
 
 @media only screen and (max-width: 1199px) {
 
     .arrow-pink{
-        right: 53px;
-        bottom: 23px;
-        width: 50px !important;
+        width: 50px;
+        right: -25px;
     }
 
     .move img{
         width: 80%;
     }
-    .banner-text-sm{
-        /* font-size: 28px;
-        top: 60px; */
-    }
-    .banner-text-bi{
-        /* font-size: 25px;
-        top: 150px; */
-    }
-    .banner-text-rd{
-        /* top: 195px; */
-    }
-    .banner-text-rd div:first-child{
-        /* width: 130px;
-        height: 130px;
-        font-size: 14px;
-        line-height: initial; */
-    }
-    .banner-text-rd div:last-child {
-        /* width: 130px;
-        height: 130px;
-        font-size: 14px; */
-    }
-    .banner-text-rd {
-        /* width: 280px; */
-    }
+
     .banner-text-end{
         font-size: 14px;
     }
@@ -578,9 +615,7 @@ tr td:nth-child(1){
     .sec1-right div:nth-child(4) img{
         width: 300px;
     }
-    .sec1-content div:first-child img{
-        width: 80%;
-    }
+
     .sec2-title{
         font-size: 40px;
     }
@@ -606,19 +641,58 @@ tr td:nth-child(1){
     .footer img{
         width: 35px;
     }
+
+    .compete-bule{
+        width: 320px;
+        height: 220px;
+    }
+    .compete-title{
+        font-size: 30px;
+    }
+    .compete-text{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .compete-sheep img{
+        width: 180px;
+    }
+    .compete-pink{
+        width: 320px;
+        height: 220px;
+    }
+    .arrow-blue{
+        width: 50px;
+    }
+    .compete-bill img{
+        width: 75px;
+    }
 }
 @media only screen and (max-width: 992px) {
+
+    .compete-bule{
+        width: 279px;
+        height: 193.5px;
+    }
+    .menu a{
+        margin-left: 30px;
+    }
+    .compete-sheep img{
+        width: 155px;
+    }
+    .compete-pink{
+        width: 279px;
+        height: 193.5px;
+    }
+    .compete-title{
+        padding-top: 10px;
+    }
+    .compete-bill img{
+        width: 70px;
+    }
     a img{
         width: 40px;
     }
-    .sec1-content div:first-child img{
-        width: 279px;
-    }
-    .arrow-pink{
-        bottom: 59px;
-        right: -23px;
-        width: 45px !important;
-    }
+    
     .banner-img-next{
         bottom: 15px;
     }
@@ -642,28 +716,48 @@ tr td:nth-child(1){
     }
 }
 @media only screen and (max-width: 768px) {
+
+    .compete-bule{
+        width: 320px;
+        height: 220px;
+        margin: auto;
+    }
+    .compete-title{
+        font-size: 30px;
+    }
+    .compete-text{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .compete-sheep img{
+        width: 180px;
+    }
+    .compete-pink{
+        width: 320px;
+        height: 220px;
+        margin: auto;
+    }
+    .arrow-blue{
+        width: 50px;
+    }
+    .compete-bill img{
+        width: 75px;
+    }
+
     .menu{
         display: none;
     }
     .arrow-down{
         display: block;
-        width: 59px !important;
+        width: 50px;
         position: absolute;
         right: 0px;
         bottom: -27px;
-    }
-    .sec1-content div:first-child{
-        width: 370px;
-        margin: auto;
-
     }
     .sec1-content{
         padding-top: 35px;
         display: block;
         text-align: center;
-    }
-    .sec1-content div:first-child img{
-        width: 370px;
     }
     .header-content {
 		display: flex;
@@ -704,18 +798,19 @@ tr td:nth-child(1){
     .banner-text-sm{
         font-size: 28px;
         top: 60px;
+        line-height: 30px;
     }
     
     .banner-text-bi{
         font-size: 22px;
-        top: 150px;
+        top: 155px;
     }
-    .logo-img{
-        padding-left: 10px;
+
+    .sheep{
+        bottom: -3px;
     }
-  
     .banner-text-end{
-        left: 10px;
+        left: 10%;
         bottom: 10px;
         font-size: 8px;
     }
@@ -723,9 +818,7 @@ tr td:nth-child(1){
         height: 400px;
         width: auto;
     }
-    .banner-img{
-        overflow: hidden;
-    }
+
     .banner-text-rd{
         top: 260px;
         left: 0;
@@ -734,10 +827,6 @@ tr td:nth-child(1){
     }
     .banner-img-next {
         bottom: 25px;
-    }
-    .arrow-down{
-        width: 47px!important;
-        right: 35px;
     }
     .sec1-title{
         font-size: 35px;
@@ -827,15 +916,14 @@ tr td:nth-child(1){
     .sec2-next{
         margin-bottom: 20px;
     }
+    
     .brand-content {
         line-height: 25px;
     }
     .sec1-content{
         padding: 30px 0;
     }
-    .sec1-content div:first-child img{
-        width: 300px;
-    }
+   
     .sec4 div:nth-child(3){
         margin-top: 20px;
     }
@@ -843,3 +931,5 @@ tr td:nth-child(1){
         margin-top: 20px;
     }
 }
+
+
