@@ -267,6 +267,15 @@ header {
     text-decoration: underline;
 }
 
+.sec1-right div:nth-child(5) a {
+    color: white;
+    text-decoration: none;
+}
+
+.sec1-right div:hover a {
+    color: #0a58ca;
+}
+
 .sec1-next {
     text-align: center;
     margin-top: -80px;
