@@ -399,6 +399,8 @@ header {
 
 .sec5-content {
     padding: 20px 0 0 0;
+    width: fit-content;
+    margin: auto;
 }
 .sec3-title-content {
     display: flex;
@@ -427,8 +429,7 @@ header {
 
 .fream{
     width: 950px;
-    height: 350px;
-    background-color: white;
+    height: 400px;
 }
 
 .brand {
@@ -662,7 +663,7 @@ tr td:nth-child(1){
     }
 
     .fream{
-        width: 80%;
+        width: 94%;
         height: 350px;
     }
     .move a{
@@ -924,7 +925,7 @@ tr td:nth-child(1){
     }
 
     .sec1-next{
-        margin: auto;
+        margin-top: 40px;
         width: 100%;
         display: flex;
         justify-content: center;
