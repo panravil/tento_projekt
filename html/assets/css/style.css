@@ -883,8 +883,11 @@ tr td:nth-child(1){
     }
     .banner-text-end{
         left: 10%;
-        bottom: 10px;
-        font-size: 8px;
+        bottom: 100px;
+        font-size: 13px;
+        width: 100%;
+        text-align: center;        
+        left: unset;
     }
     .banner-img .w-100p{
         height: 400px;
@@ -896,7 +899,7 @@ tr td:nth-child(1){
         left: 0;
         width: 100%;
         justify-content: center;
-        bottom: 70px;
+        bottom: 150px;
     }
     .banner-img-next {
         bottom: 25px;
