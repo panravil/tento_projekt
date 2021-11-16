@@ -375,6 +375,25 @@ header {
     padding-top: 25px;
 }
 
+.sec5{
+    background-color: #6fa287;
+    padding: 25px 0;
+}
+
+.sec5-content p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    color: white;
+    font-family: 'Boing-Light' ,sans-serif;
+    font-size: 19px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.sec5-content {
+    padding: 20px 0 0 0;
+}
 .sec3-title-content {
     display: flex;
     justify-content: center;
@@ -630,10 +649,12 @@ tr td:nth-child(1){
         right: -25px;
     }
 
-    .move img{
+    .move a{
         width: 80%;
     }
-
+    .move img{
+        width: 100%;
+    }
     .banner-text-end{
         font-size: 14px;
     }
@@ -839,6 +860,9 @@ tr td:nth-child(1){
         line-height: 30px;
     }
     
+    .sec5-content p{
+        font-size: 16px;
+    }
     .banner-text-bi{
         font-size: 22px;
         top: 155px;
@@ -973,4 +997,12 @@ tr td:nth-child(1){
     }
 }
 
+.sp-br {
+    display: none;
+}
 
+@media only screen and (max-width: 410px) {
+    .sp-br{
+        display: block;
+    }
+}
