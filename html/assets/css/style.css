@@ -380,6 +380,12 @@ header {
     padding: 25px 0;
 }
 
+.sec5-content p:hover{
+    text-decoration: underline;
+    color: #006944;
+    cursor: pointer;
+}
+
 .sec5-content p{
     display: flex;
     justify-content: center;
