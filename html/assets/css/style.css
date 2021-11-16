@@ -419,6 +419,12 @@ header {
     justify-content: center;
 }
 
+.fream{
+    width: 950px;
+    height: 350px;
+    background-color: white;
+}
+
 .brand {
     display: flex;
     padding: 80px 15%;
@@ -649,6 +655,10 @@ tr td:nth-child(1){
         right: -25px;
     }
 
+    .fream{
+        width: 80%;
+        height: 350px;
+    }
     .move a{
         width: 80%;
     }
