@@ -4,8 +4,13 @@ body {
 }
 
 .header-contain {
-    width: 70%;
-    margin: 0 15%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: white;
+    width: 100%;
+    margin: 0;
+    padding: 10px 15%;
 }
 .sheep{
     position: absolute;
@@ -66,6 +71,7 @@ header {
 .index {
     max-width: 1920px;
     margin: auto;
+    margin-top: 65px;
 }
 
 .banner-img {
@@ -73,10 +79,11 @@ header {
     position: relative;
     height: auto;
     background-image: url(../images/header-img.jpg);
-    height: calc(100vh - 84px);
+    height: calc(100vh - 65px);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
+    min-height: 570px;
 }
 
 .compete-bule{
@@ -310,8 +317,7 @@ header {
 .sec2-content {
     margin-top: 70px;
     border: 1px solid #006944;
-    padding: 100px;
-    padding-right: 70px;
+    padding: 30px 70px 10px 100px;
 }
 
 .sec2 a{
@@ -358,7 +364,7 @@ header {
 .question-check {
     width: 15px !important;
     height: 15px !important;
-    margin: 0;
+    margin-right: 5px;
     margin-top: 10px;
 }
 
@@ -476,7 +482,7 @@ header {
 
 .sec4 div:nth-child(3) {
     font-family: 'Boing-Medium';
-    font-size: 20px;
+    font-size: 23px;
     color: #006944;
     margin-top: 35px;
     display: flex;
@@ -544,38 +550,38 @@ tr td:nth-child(1){
 }
 
 .hamburger {
-	display: none;
-	width: 50px;
-	line-height: 0;
-	cursor: pointer;
-	padding: 0px 8px 10px 10px;
+    display: none;
+    width: 50px;
+    line-height: 0;
+    cursor: pointer;
+    padding: 0px 8px 10px 10px;
 }
 .hamburger span {
-	display: inline-block;
-	width: 100%;
-	height: 4px;
-	background-color: #007242;
-	margin: 3px 0;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #007242;
+    margin: 3px 0;
 }
 
 .mobile-menu {
-	position: absolute;
-	width: 100%;
-	background: #fff;
-	z-index: 1000;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
     opacity: 0.93;
     display: flex !important;
-    top: 89px;
+    top: 65px;
     left: 0px;
 }
 .mobile-menu .list-items {
-	flex-direction: column;
-	transition: all 0.9s ease;
-	display: flex;
-	padding: 0 40px;
-	list-style: none;
-	overflow: hidden;
-	margin: 0;
+    flex-direction: column;
+    transition: all 0.9s ease;
+    display: flex;
+    padding: 0 40px;
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
 }
 .mobile-menu.mhide .list-items {
     height: 0;
@@ -586,18 +592,55 @@ tr td:nth-child(1){
     opacity: 0.7;
 }
 .mobile-menu .list-items .list-item {
-	padding: 10px 15px;
-	text-transform: uppercase;
+    padding: 10px 15px;
+    text-transform: uppercase;
 }
 .mobile-menu .list-items .list-item a {
-	color: #006944;
-	text-decoration: none;
+    color: #006944;
+    text-decoration: none;
     font-family: 'Boing-Medium' ,sans-serif;
     font-size: 18px;
 }
 
 .brand img{
     width: 150px;
+}
+
+.receipt{
+    position: relative;
+}
+.f-m{
+    font-family: "Boing-Medium",sans-serif;
+}
+.notification{
+    position: absolute;
+    background-color: white;
+    z-index: 998;
+    border: 1px solid #006944;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: "Boing-Light" , sans-serif;
+    color: black;
+    display: none;
+}
+.receipt-pc:hover{
+    cursor: pointer;
+}
+.receipt.active .notification {
+    display: block;
+}
+.receipt-pc::after,
+.receipt::after{
+    content: "";
+    position: absolute;
+    background: url("../images/otaznik.png");
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    cursor:pointer
+}
+.receipt-pc:hover .notification {
+    display: block;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -609,8 +652,7 @@ tr td:nth-child(1){
     }
     
     .header-contain{
-        width: 80%;
-        margin: 0 10%;
+        padding: 10px 10%;
     }
     .banner-text-bi{
         font-size: 31px;
@@ -697,10 +739,9 @@ tr td:nth-child(1){
         font-size: 40px;
     }
     .sec2-content {
-        margin-top: 67px;
         border: 1px solid #006944;
-        padding: 70px;
         padding-right: 40px;
+        padding-left: 70px;
     }
     .brand{
         display: block;
@@ -793,6 +834,13 @@ tr td:nth-child(1){
     }
 }
 @media only screen and (max-width: 768px) {
+    .receipt.active .notification{
+        display: block;
+    }
+
+    .header-contain{
+        padding-bottom: 5px;
+    }
 
     .compete-bule{
         width: 320px;
@@ -837,10 +885,10 @@ tr td:nth-child(1){
         text-align: center;
     }
     .header-content {
-		display: flex;
-		padding: 10px 0 0 0;
-		justify-content: space-between;
-	}
+        display: flex;
+        padding: 10px 0 0 0;
+        justify-content: space-between;
+    }
     .sec1-next {
         margin: auto;
         width: 100%;
