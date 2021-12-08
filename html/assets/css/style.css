@@ -829,7 +829,13 @@ tr td:nth-child(1){
     font-family: 'Boing-Light', sans-serif;
     font-size: 25px;
     color: white;
-    
+}
+.cz-contact a:hover{
+    text-decoration: none;
+    color: #006944;
+}
+.cz-m{
+    margin-top: 2px;
 }
 
 @media only screen and (max-width: 1440px) {
