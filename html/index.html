@@ -298,8 +298,20 @@
                     Výherci
                 </div>
                 <div class="sec5-content wow fadeInUp" data-wow-delay="0.3s">
-                    <a href="#">Seznam výherců z 1. týdne soutěže<br class="sp-br" /> (1. 2. – 7. 2. 2022)</a>
+                    <a href="#sec4">Seznam výherců z 1. týdne soutěže<br class="sp-br" /> (1. 2. – 7. 2. 2022)</a>
                 </div>
+                <div class="winners-list hilist">
+                    <p>Týdenní pobyt v klidu lesa:</p>
+                    <p>Karel z Prahy</p>
+                    <p>Závěsné křeslo:</p>
+                    <p>Linda z Brna</p>
+                    <p>Karolína z Ústí nad Labem</p>
+                    <p>Václav z Kroměříže</p>
+                    <p>Sebastián z Karlových Varů</p>
+                    <p>Viktorie ze Šumperka</p>
+                    <p>Gratulujeme!</p>
+                </div>
+
                 <div class="banner-img-next wow fadeInUp" data-wow-delay="0.3s">
                     <a href="#sec4">
                         <span class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></span>
@@ -338,7 +350,9 @@
                     });
                     
                 });
-
+                $(document).on('click', '.sec5-content', function(e) {
+                    $('.winners-list').toggleClass("hilist").toggleClass("shlist");
+                });
                 $(document).on('click', '.receipt', function(e) {
                     e.stopPropagation();
                     $(this).addClass('active');

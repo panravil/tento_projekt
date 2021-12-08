@@ -84,7 +84,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
-    min-height: 710px;
+    min-height: 730px;
     z-index: 1;
 }
 
@@ -254,7 +254,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 	line-height: 60px;
 	position: absolute;
 	left: 59px;
-	bottom: 14px;
+	bottom: 16px;
 	color: #FFF;
 	text-align: center;
 	font-size: 70px;
@@ -362,7 +362,11 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     line-height: 15px;
 }
 
-.sec1-right div:hover a {
+.sec1-right p{
+    z-index: 1;
+    position: relative;
+}
+.sec1-right p:hover{
     color: #006944;
 }
 
@@ -483,10 +487,31 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     text-decoration: none;
 }
 
+.winners-list{
+    padding-top: 20px;
+    width: fit-content;
+    margin: auto;
+    transition: all 0.9s ease;
+    overflow: hidden;
+    transition: all 0.9s ease;
+}
+.winners-list.hilist{
+    height: 0;
+}
+.winners-list.shlist{
+    height: 340px;
+}
 .sec5-content {
     padding: 20px 0 0 0;
     width: fit-content;
     margin: auto;
+}
+.winners-list p{
+    font-size: 17px;
+    font-family: "Boing-Light" ,sans-serif;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
 }
 .sec3-title-content {
     display: flex;
@@ -724,7 +749,7 @@ tr td:nth-child(1){
 
 @media only screen and (max-width: 1440px) {
     .banner-img{
-        min-height: 570px;
+        min-height: 635px;
     }
     .banner-text-sm{
         font-size: 37px;
@@ -872,6 +897,9 @@ tr td:nth-child(1){
 }
 @media only screen and (max-width: 992px) {
 
+    .banner-text-end{
+        font-size: 13px;
+    }
     .compete-bule{
         width: 279px;
         height: 193.5px;
@@ -919,6 +947,7 @@ tr td:nth-child(1){
     }
 }
 @media only screen and (max-width: 768px) {
+
 
     .sec1{
         padding-bottom: 80px;
@@ -1007,8 +1036,36 @@ tr td:nth-child(1){
     .data-in input{
         height: 35px;
     }
+    .banner-text-end{
+        left: 10%;
+        bottom: 100px;
+        font-size: 13px;
+        width: 100%;
+        text-align: center;        
+        left: unset;
+        z-index: 1;
+    }
+    .banner-text-rd{
+        /* top: unset; */
+        left: 0;
+        width: 100%;
+        justify-content: center;
+        bottom: 150px;
+    }
 }
 @media only screen and (max-width: 576px) {
+    .banner-img{
+        min-height: 580px;
+    }
+    .banner-text-rd{
+        top: 260px;
+    }
+    .header-contain{
+        padding: 10px 20px;
+    }
+    .header-content{
+        padding-right: 0px !important;
+    }
     .sec1{
         padding-bottom: 120px;
     }
@@ -1025,29 +1082,13 @@ tr td:nth-child(1){
         font-size: 22px;
         top: 155px;
     }
-
     .sheep{
         bottom: -3px;
     }
-    .banner-text-end{
-        left: 10%;
-        bottom: 100px;
-        font-size: 13px;
-        width: 100%;
-        text-align: center;        
-        left: unset;
-    }
+    
     .banner-img .w-100p{
         height: 400px;
         width: auto;
-    }
-
-    .banner-text-rd{
-        top: unset;
-        left: 0;
-        width: 100%;
-        justify-content: center;
-        bottom: 150px;
     }
     .banner-img-next {
         bottom: 25px;
@@ -1163,8 +1204,27 @@ tr td:nth-child(1){
     display: none;
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 415px) {
     .sp-br{
         display: block;
+    }
+    .sheep{
+        width: 75%;
+    }
+    .logo-img{
+        width: 80px;
+        height: 35px;
+    }
+    .header-contain{
+        align-items: center;
+    }
+    .hamburger{
+        width: 45px;
+    }
+    .hamburger span{
+        margin: 2px 0;
+    }
+    .mobile-menu{
+        top: 64px;
     }
 }
