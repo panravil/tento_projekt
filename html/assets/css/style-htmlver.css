@@ -84,7 +84,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
-    min-height: 710px;
+    min-height: 570px;
     z-index: 1;
 }
 
@@ -306,7 +306,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     color: white;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 35px;
 }
 
 .sec1-content {
@@ -723,9 +723,6 @@ tr td:nth-child(1){
 }
 
 @media only screen and (max-width: 1440px) {
-    .banner-img{
-        min-height: 570px;
-    }
     .banner-text-sm{
         font-size: 37px;
         left: 10%;
