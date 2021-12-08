@@ -1348,4 +1348,7 @@ tr td:nth-child(1){
         height: 37px;
         font-size: 14.5px;
     }
+    .cz-m{
+        margin-top: 5px;
+    }
 }
