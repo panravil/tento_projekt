@@ -818,14 +818,18 @@ tr td:nth-child(1){
     font-size: 16px;
     color: #006944;
     text-transform: uppercase;
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
 }
 .cz-content{
     text-align: center;
 }
-.cz-contact{
+.cz-contact a{
     font-family: 'Boing-Light', sans-serif;
     font-size: 25px;
     color: white;
+    
 }
 
 @media only screen and (max-width: 1440px) {
@@ -1336,7 +1340,7 @@ tr td:nth-child(1){
     .cz-title{
         font-size: 32px;
     }
-    .cz-contact{
+    .cz-contact a{
         font-size: 16px;
     }
     .cz-btn{
@@ -1344,5 +1348,4 @@ tr td:nth-child(1){
         height: 37px;
         font-size: 14.5px;
     }
-
 }
