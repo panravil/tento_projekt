@@ -759,6 +759,20 @@ tr td:nth-child(1){
     justify-content: center;
     align-items: center;
 }
+.page-sk{
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-image: url(../images/Rectangle\ .png);
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .cz-title{
     font-family: 'Boing-Medium', sans-serif;
