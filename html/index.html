@@ -18,6 +18,10 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
         <header class="header-contain">
@@ -298,20 +302,27 @@
                     Výherci
                 </div>
                 <div class="sec5-content wow fadeInUp" data-wow-delay="0.3s">
-                    <a href="#sec4">Seznam výherců z 1. týdne soutěže<br class="sp-br" /> (1. 2. – 7. 2. 2022)</a>
+                    <a class="sec5-content" data-toggle="collapse" data-target="#vyherci">Seznam výherců z 1. týdne soutěže<br class="sp-br" /> (1. 2. – 7. 2. 2022)</a>
                 </div>
-                <div class="winners-list hilist">
-                    <p>Týdenní pobyt v klidu lesa:</p>
-                    <p>Karel z Prahy</p>
-                    <p>Závěsné křeslo:</p>
-                    <p>Linda z Brna</p>
-                    <p>Karolína z Ústí nad Labem</p>
-                    <p>Václav z Kroměříže</p>
-                    <p>Sebastián z Karlových Varů</p>
-                    <p>Viktorie ze Šumperka</p>
-                    <p>Gratulujeme!</p>
+                  
+                  <div id="vyherci" class="collapse">
+                        <div class="sec5-content">
+                            <div class="sec5-content2"><b>Týdenní pobyt v klidu lesa</b><br></div>
+                            <br>
+                            Karel z Prahy<br>
+                            <br>
+                            <div class="sec5-content2"><b>Závěsné křeslo</b><br></div>
+                            <br>
+                            Linda z Brna <br>
+                            Karolína z Ústí nad Labem<br>
+                            Václav z Kroměříže<br>
+                            Sebastián z Karlových Varů<br>
+                            Viktorie ze Šumperka
+                            <br>
+                            <div class="sec5-content2"><b>Gratulujeme!</b><br></div>
+                        </div>
+                  </div>
                 </div>
-
                 <div class="banner-img-next wow fadeInUp" data-wow-delay="0.3s">
                     <a href="#sec4">
                         <span class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></span>
@@ -348,11 +359,8 @@
                     $('.hamburger').on('click',function(){
                         $(".mobile-menu").toggleClass("mhide").toggleClass("mshow");
                     });
-                    
                 });
-                $(document).on('click', '.sec5-content', function(e) {
-                    $('.winners-list').toggleClass("hilist").toggleClass("shlist");
-                });
+
                 $(document).on('click', '.receipt', function(e) {
                     e.stopPropagation();
                     $(this).addClass('active');

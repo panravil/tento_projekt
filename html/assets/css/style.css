@@ -11,6 +11,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 10px 15%;
+    display: flex;
 }
 .sheep{
     position: absolute;
@@ -487,31 +488,28 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     text-decoration: none;
 }
 
-.winners-list{
-    padding-top: 20px;
-    width: fit-content;
-    margin: auto;
-    transition: all 0.9s ease;
-    overflow: hidden;
-    transition: all 0.9s ease;
-}
-.winners-list.hilist{
-    height: 0;
-}
-.winners-list.shlist{
-    height: 340px;
-}
 .sec5-content {
     padding: 20px 0 0 0;
     width: fit-content;
     margin: auto;
-}
-.winners-list p{
-    font-size: 17px;
-    font-family: "Boing-Light" ,sans-serif;
-    margin-bottom: 10px;
     color: white;
+    font-family: 'Boing-Light' ,sans-serif;
+    font-size: 19px;
+    padding-bottom: 5px;
     text-align: center;
+    text-decoration: none;
+}
+
+.sec5-content2 {
+    padding: 20px 0 0 0;
+    width: fit-content;
+    margin: auto;
+    color: white;
+    font-family: 'Boing-Light' ,sans-serif;
+    font-size: 22px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
 }
 .sec3-title-content {
     display: flex;
@@ -586,7 +584,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .sec4 div:nth-child(3) {
     font-family: 'Boing-Medium';
-    font-size: 23px;
+    font-size: 33px;
     color: #006944;
     margin-top: 35px;
     display: flex;
