@@ -745,6 +745,56 @@ tr td:nth-child(1){
     display: block;
 }
 
+.page-cz{
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-image: url(../images/Rectangle\ 2.png);
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cz-title{
+    font-family: 'Boing-Medium', sans-serif;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 25px;
+}
+.flag{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.flag img{
+    width: 50px;
+    height: 37px;
+}
+.cz-btn{
+    width: 115px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 25px;
+    font-family: 'Boing-Medium', sans-serif;
+    font-size: 16px;
+    color: #006944;
+    text-transform: uppercase;
+}
+.cz-content{
+    text-align: center;
+}
+.cz-contact{
+    font-family: 'Boing-Light', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
 @media only screen and (max-width: 1440px) {
     .banner-img{
         min-height: 635px;
@@ -1225,4 +1275,20 @@ tr td:nth-child(1){
     .mobile-menu{
         top: 64px;
     }
+    .flag img{
+        width: 40px;
+        height: 30px;
+    }
+    .cz-title{
+        font-size: 32px;
+    }
+    .cz-contact{
+        font-size: 16px;
+    }
+    .cz-btn{
+        width: 102px;
+        height: 37px;
+        font-size: 14.5px;
+    }
+
 }
