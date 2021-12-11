@@ -46,15 +46,15 @@
             </div>
 
             <div class="menu">
-                <a href="">O Tento</a>
-                <a href="">Jak soutěžit </a>
-                <a href="">Pravidla</a>
-                <a href="">Výherci</a>
-                <a href="">Kontakt</a>
+                <a href="#Tento">O Tento</a>
+                <a href="#Jaksoutěžit">Jak soutěžit </a>
+                <a href="#Pravidla">Pravidla</a>
+                <a href="#Výherci">Výherci</a>
+                <a href="#Kontakt">Kontakt</a>
             </div>
         </header>
         <main class="index">
-            <div class="banner-img">
+            <section id="Tento" class="banner-img">
                 <h2 class="banner-text-sm  wow fadeInUp" data-wow-delay="0.3s">Vyhrajte každý týden <br> pobyt &nbsp;v klidu lesa <br>v hodnotě 40 000 Kč!</h2>
                 <h4 class="banner-text-bi wow fadeInUp" data-wow-delay="0.6s">Nebo závěsné křeslo.</h4>
                 <div class="banner-text-rd wow fadeInUp" data-wow-delay="0.9s">
@@ -68,12 +68,12 @@
                     <img src="./assets/images/Lamb.png">
                 </div>
                 <div class="banner-img-next">
-                    <a href="#sec1">
+                    <a href="#Jaksoutěžit">
                         <span class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" href="#sec1"></span>
                     </a>
                 </div>
-            </div>
-            <section class="sec1" id="sec1">
+            </section>
+            <section class="sec1" id="Jaksoutěžit">
                 <div class="sec1-title wow fadeInUp" data-wow-delay="0.3s">
                     Jak soutěžit? 
                 </div>
@@ -110,7 +110,6 @@
                             <img class="arrow-pink" src="./assets/images/Arrow_Pink.png">
                             <img class="arrow-down" src="./assets/images/Arrow-down.png">
                         </div>
-
                     </div>
                     <div class="sec1-right">
                         <div>
@@ -134,12 +133,12 @@
                     </div>
                 </div>
                 <div class="banner-img-next">
-                    <a href="#sec2">
+                    <a href="#Pravidla">
                         <span class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" href="#sec1"></span>
                     </a>
                 </div>
             </section>
-            <section class="sec2" id="sec2">
+            <section class="sec2" id="Pravidla">
                 <div class="sec2-title wow fadeInUp" data-wow-delay="0.3s">
                     Vyplňte formulář
                 </div>
@@ -177,8 +176,10 @@
                         </tr>
                         <tr>
                             <td><button class="submit">Odeslat</button> </td>
-                            <td><span><input type="checkbox" class="question-check">
-                                Souhlasím s&nbsp;<a href="">pravidly soutěže.</a></span>
+                            <td>
+                                <div><input type="checkbox" name="check1" id="check1" class="question-check">
+                                    <label for="check1">Souhlasím s&nbsp;<a href="">pravidly soutěže.</a></label></div>
+                                
                             </td>
                         </tr>
                     </table>
@@ -230,24 +231,29 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="checkbox" class="question-check"><sapn>Souhlasím se <a href="">zpracováním osobních údajů.</a></sapn>
+                                <div>
+                                    <input type="checkbox" name="check2" id="check2" class="question-check"><label for="check2">Souhlasím se <a href="">zpracováním osobních údajů.</a></label>
+                                </div>
                                 
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="checkbox" class="question-check"><span>Souhlasím s <a href="">pravidly soutěže.</a></span> 
+                                <div>
+                                    <input type="checkbox" name="check3" id="check3" class="question-check"><label for="check3">Souhlasím s <a href="">pravidly soutěže.</a></label> 
+                                </div>
+                                
                             </td>
                         </tr>
                     </table>
                 </div>
                 <div class="sec2-next">
-                    <a href="#sec3">
+                    <a href="#Označce">
                         <span class="ca3-scroll-down-link ca3-scroll-down-arrowB" data-ca3_iconfont="ETmodules" data-ca3_icon=""></span>
                     </a>
                 </div>
             </section>
-            <section class="sec3" id="sec3">
+            <section class="sec3" id="Označce">
                 <div class="sec1-title wow fadeInUp" data-wow-delay="0.3s">
                     O značce Tento
                 </div>
@@ -295,7 +301,7 @@
                     </div>
                 </div>
             </section>
-            <section class="sec5" id="sec5">
+            <section class="sec5" id="Výherci">
                 <div class="sec1-title wow fadeInUp" data-wow-delay="0.3s">
                     Výherci
                 </div>
@@ -327,7 +333,7 @@
                     </a>
                 </div>
             </section>
-            <section class="sec4 wow fadeInUp" data-wow-delay="0.3s">
+            <section class="sec4 wow fadeInUp" id="Kontakt" data-wow-delay="0.3s">
                 <div class="sec2-title">
                     Kontakt
                 </div>
