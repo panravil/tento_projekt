@@ -837,20 +837,57 @@ table div{
     align-items: center;
 }
 
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .sheep{
+        width: 52% !important;
+        right: 0.5%
+    }
+    .banner-text-sm{
+        top: calc(18% - 65px) !important;
+        font-size: 70px;
+        line-height: 73px;
+    }
+    .banner-text-bi{
+        top: calc(18% - 65px + 219px) !important;
+        font-size: 64px;
+    }
+    .banner-text-rd{
+        width: 560px;
+        top: 40% !important;
+    }
+    .banner-text-rd div:first-child{
+        width: 260px;
+        height: 260px;
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .banner-text-rd div:last-child{
+        width: 260px;
+        height: 260px;
+        font-size: 30px;
+    }
+    .banner-text-end{
+        font-size: 25px !important;
+        top: 65%;
+    }
+}
+
 @media only screen and (max-width: 1440px) {
     
     .header-contain{
         padding: 10px 10%;
     }
-    .banner-text-bi{
-        top:calc(20% - 65px + 150px);
-    }
+    
     .banner-text-rd{
         top: 42%;
     }
     .banner-text-sm{
         left: 10%;
-        top: calc(20% - 65px);
+        top: calc(20% -65px);
     }
     .banner-text-rd{
         left: 10%;
@@ -880,12 +917,11 @@ table div{
 }
 
 @media only screen and (max-width: 1199px) {
-
-    .banner-img{
-        max-height: 1024px;
+    .banner-text-rd{
+        top: 48%;
     }
     .banner-text-end{
-        top: 70%;
+        font-size: 17px;
     }
     .sheep{
         width: 38%;
@@ -911,9 +947,7 @@ table div{
     .move img{
         width: 100%;
     }
-    .banner-text-end{
-        font-size: 14px;
-    }
+    
     .sec1-title{
         font-size: 40px;
     }
@@ -1001,11 +1035,9 @@ table div{
     .banner-img{
         min-height: 730px;
     }
-    /* .banner-text-rd{
-        top: 38vh;
-    } */
     .banner-text-end{
         top: 68%;
+        font-size: 14px;
     }
     .banner-text-rd{
         width: 365px;
@@ -1221,7 +1253,7 @@ table div{
         min-height: 580px;
     }
     .banner-text-rd{
-        top: 30vh;
+        top: 33%;
     }
     .header-contain{
         padding: 10px 20px;
@@ -1523,4 +1555,9 @@ table div{
     table label{
         font-size: 10px;
     }
+    .sec4{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
+
