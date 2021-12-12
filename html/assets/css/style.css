@@ -290,16 +290,17 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   100% { transform:translate(0,10px); opacity: 0; }
 }
 
-
-
 .sec1 {
     background-color: #6fa287;
     position: relative;
     padding-top: 25px;
 }
-
-
-
+.anchor {
+    display: block;
+    height: 63px;
+    margin-top: -63px;
+    visibility: hidden;
+}
 .sec1-title {
     font-family: 'Boing-Medium', sans-serif;
     font-size: 48px;
@@ -881,6 +882,35 @@ table div{
         top: 65%;
     }
 }
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-height: 1024px) 
+  and (orientation: portrait){
+    .banner-text-sm{
+        font-size: 47px !important;
+        line-height: 48px !important;
+    }
+    .banner-text-bi{
+        top: calc(20% - 65px + 145px) !important;
+        font-size: 39px !important;
+    }
+    .banner-text-rd{
+        width: 400px !important;
+    }
+    .banner-text-rd div:first-child{
+        width: 190px !important;
+        height: 190px !important;
+        line-height: 23px;
+    }
+    .banner-text-rd div:last-child{
+        width: 190px !important;
+        height: 190px !important;
+    }
+    .banner-text-end{
+        font-size: 18px !important;
+    }
+  }
 
 @media only screen and (max-width: 1440px) {
     
@@ -1542,6 +1572,7 @@ table div{
     .brand-content{
         line-height: 23px;
         letter-spacing: 2px;
+        font-size: 16px;
     }
     .sec4 div:nth-child(2){
         font-size: 14px;
