@@ -387,7 +387,8 @@
             new WOW().init();
             let flag;
             $(document).ready(function () {
-                $('.hamburger').on('click', function () {
+                $('.hamburger').on('click', function (e) {
+                    e.stopPropagation();
                     $(".mobile-menu").toggleClass("mhide").toggleClass("mshow");
                 });
                 $('.mobile-menu').on('click', function () {
@@ -401,11 +402,9 @@
             });
             $(document).on('click', 'body', function (e) {
                 $('.receipt').removeClass('active');
+                $(".mobile-menu").addClass("mhide").removeClass("mshow");
             });
         </script>
     </main>
 </body>
-
-</html>
-
 </html>
