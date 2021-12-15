@@ -200,7 +200,7 @@ header {
 .banner-text-end {
     font-family: 'Boing-Light', sans-serif;
     position: absolute;
-    top: 76vh;
+    top: 82%;
     left: 15%;
     font-size: 18px;
     color: #d7e0d8;
@@ -803,6 +803,23 @@ table div{
         top: 65%;
     }
 }
+
+@media only screen and (max-height: 680px)
+and (orientation: landscape){
+    .banner-img{
+        min-height: 580px;
+    }
+    .banner-text-rd{
+        top: 260px;
+    }
+    .banner-text-sm{
+        top: 57px;
+    }
+    .banner-text-bi{
+        top: 207px;
+    }
+}
+
 
 @media only screen 
   and (min-width: 768px) 
