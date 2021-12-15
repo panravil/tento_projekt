@@ -764,6 +764,11 @@ table div{
     display: flex;
     align-items: center;
 }
+.error{
+    padding-top: 20px !important;
+    color: red;
+    display: none;
+}
 
 @media only screen 
   and (min-width: 1024px) 
@@ -1352,6 +1357,9 @@ and (orientation: landscape){
 
 @media only screen and (max-width: 415px) {
 
+    .banner-img{
+        min-height: 610px;
+    }
     .banner-text-sm{
         left: calc(50% - 155px);
     }
@@ -1359,7 +1367,7 @@ and (orientation: landscape){
         left: calc(50% - 155px);
     }
     .banner-text-end{
-        top: 56vh;
+        top: 60%;
         text-align: center;
         left: calc(50% - 155px);
     }
@@ -1395,25 +1403,25 @@ and (orientation: landscape){
         left: calc(50% - 155px);
     }
     .banner-img{
-        min-height: inherit;
+        min-height: 570px;
     }
 }
-@media only screen and (max-width: 359px) {
+@media only screen and (max-width: 374px) {
     .banner-text-sm{
         font-size: 23px;
         line-height: 24px;
-        top: 7vh;
+        top: 9%;
         left: calc(50% - 131px);
     }
     .banner-text-bi{
         font-size: 21px;
-        top: calc(8vh + 69px);
+        top: calc(9% + 69px);
         left: calc(50% - 131px);
     }
     .banner-text-rd{
         left: calc(50% - 130px);
         width: 260px;
-        top: 28vh;
+        top: 31%;
     }
     .banner-text-rd div:last-child{
         width: 120px;
@@ -1427,7 +1435,7 @@ and (orientation: landscape){
     }
     .banner-text-end{
         font-size: 11px;
-        top: 53vh;
+        top: 60%;
         left: calc(50% - 121px);
     }
     .compete-bule{
@@ -1465,4 +1473,11 @@ and (orientation: landscape){
         padding-right: 10px;
     }
 }
+@media only screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
 
+    .banner-img{
+        min-height: 500px;
+    }
+
+}
+        
