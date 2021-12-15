@@ -143,9 +143,9 @@
                 </div>
             </div>
             <div class="banner-img-next">
-                <a href="#pravidla">
+                <a href="#Vyplnte-formular">
                     <span class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules"
-                        data-ca3_icon="" href="#pravidla"></span>
+                        data-ca3_icon="" href="#Vyplnte-formular"></span>
                 </a>
             </div>
         </section>
@@ -161,16 +161,16 @@
                         <td>Příjmení:</td>
                     </tr>
                     <tr>
-                        <td><input></td>
-                        <td><input></td>
+                        <td><input id="firstName"></td>
+                        <td><input id="lastName"></td>
                     </tr>
                     <tr>
                         <td>E-mail:</td>
                         <td>Telefon: </td>
                     </tr>
                     <tr>
-                        <td><input></td>
-                        <td><input></td>
+                        <td><input id="email"></td>
+                        <td><input id="phone"></td>
                     </tr>
                     <tr>
                         <td>PSČ:</td>
@@ -183,14 +183,14 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><input></td>
-                        <td><input></td>
+                        <td><input id="zipCode"></td>
+                        <td><input id="receiptCode"></td>
                     </tr>
                     <tr>
                         <td><button class="submit">Odeslat</button> </td>
                         <td>
-                            <div><input type="checkbox" name="check1" id="check1" class="question-check">
-                                <label for="check1">Souhlasím s&nbsp;<a href="">pravidly soutěže.</a></label>
+                            <div><input type="checkbox" name="check" id="check" class="question-check">
+                                <label for="check">Souhlasím s&nbsp;<a href="">pravidly soutěže.</a></label>
                             </div>
                         </td>
                     </tr>
@@ -201,31 +201,31 @@
                         <td>Jméno:</td>
                     </tr>
                     <tr>
-                        <td><input></td>
+                        <td><input id="m-firstName"></td>
                     </tr>
                     <tr>
                         <td>Příjmení:</td>
                     </tr>
                     <tr>
-                        <td><input></td>
+                        <td><input id="m-lastName"></td>
                     </tr>
                     <tr>
                         <td>E-mail:</td>
                     </tr>
                     <tr>
-                        <td><input></td>
+                        <td><input id="m-email"></td>
                     </tr>
                     <tr>
                         <td>Telefon: </td>
                     </tr>
                     <tr>
-                        <td><input></td>
+                        <td><input id="m-phone"></td>
                     </tr>
                     <tr>
                         <td>PSČ</td>
                     </tr>
                     <tr>
-                        <td><input></td>
+                        <td><input id="m-zipCode"></td>
                     </tr>
                     <tr>
                         <td class="receipt">Kód z účtenky:
@@ -244,16 +244,16 @@
                     <tr>
                         <td>
                             <div>
-                                <input type="checkbox" name="check2" id="check2" class="question-check"><label
-                                    for="check2">Souhlasím se <a href="">zpracováním osobních údajů.</a></label>
+                                <input type="checkbox" name="m-check1" id="m-check1" class="question-check"><label
+                                    for="m-check1">Souhlasím se <a href="">zpracováním osobních údajů.</a></label>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <div>
-                                <input type="checkbox" name="check3" id="check3" class="question-check"><label
-                                    for="check3">Souhlasím s <a href="">pravidly soutěže.</a></label>
+                                <input type="checkbox" name="m-check2" id="m-check2" class="question-check"><label
+                                    for="m-check2">Souhlasím s <a href="">pravidly soutěže.</a></label>
                             </div>
                         </td>
                     </tr>
@@ -404,6 +404,10 @@
                 $('.receipt').removeClass('active');
                 $(".mobile-menu").addClass("mhide").removeClass("mshow");
             });
+
+            function send(){
+
+            }
         </script>
     </main>
 </body>
