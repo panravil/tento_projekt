@@ -218,19 +218,19 @@
                         <td>E-mail:</td>
                     </tr>
                     <tr>
-                        <td><input id="m-email"></td>
+                        <td><input id="m-email" onfocusout="mailValidate()"></td>
                     </tr>
                     <tr>
                         <td>Telefon: </td>
                     </tr>
                     <tr>
-                        <td><input id="m-phone"></td>
+                        <td><input id="m-phone" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');"></td>
                     </tr>
                     <tr>
                         <td>PSČ</td>
                     </tr>
                     <tr>
-                        <td><input id="m-zipCode"></td>
+                        <td><input id="m-zipCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');"></td>
                     </tr>
                     <tr>
                         <td class="receipt">Kód z účtenky:
@@ -241,10 +241,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><input></td>
+                        <td><input id="m-receiptCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');"></td>
                     </tr>
                     <tr>
-                        <td><button class="mobile-submit" data-toggle="modal" data-target="#modal">Odeslat</button> </td>
+                        <td><button class="mobile-submit" onclick="sendMobile()">Odeslat</button> </td>
                     </tr>
                     <tr>
                         <td>
@@ -262,6 +262,11 @@
                             </div>
                         </td>
                     </tr>
+                    <tr>
+                        <td class="error" id="m-error">
+                            Vyplňte prosím červeně označená políčka a klikněte na „Poslat“.
+                        </td>
+                    </tr>
                 </table>
             </div>
             <div class="sec2-next">
@@ -273,18 +278,19 @@
         </section>
         <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
-                    <div>
-                        <img src="./assets/images/Tento-Logo.png">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div>
+                            <img src="./assets/images/Tento-Logo.png">
+                        </div>
+                        <div class="modal-title">Děkujeme Vám za účast v soutěži.</div>
+                        <div class="modal-contain">Na e-mail Vám přijde potvrzení o doručení.<br>Pokud ne, kontaktujte
+                            nás na &nbsp; <a href=""><span>info@tentolesniklid.cz</span></a></div>
+                        <div class="modal-contain">Účtenku, prosím, uschovejte pro případ výhry.</div>
                     </div>
-                    <div class="modal-title">Děkujeme Vám za účast v soutěži.</div>
-                    <div class="modal-contain">Na e-mail Vám přijde potvrzení o doručení.<br>Pokud ne, kontaktujte nás na &nbsp; <a href=""><span>info@tentolesniklid.cz</span></a></div>
-                    <div class="modal-contain">Účtenku, prosím, uschovejte pro případ výhry.</div>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
         <span class="anchor" id="o-tento"></span>
         <section class="sec3">
             <div class="sec1-title wow fadeInUp" data-wow-delay="0.3s">
@@ -431,11 +437,19 @@
 
             function mailValidate() {
                 var email = document.getElementById("email").value;
+                var memail = document.getElementById("m-email").value;
                 if (email) {
                     if (!validateEmail(email)) {
                         document.getElementById('email').style.borderColor = "red";
                     } else {
                         document.getElementById('email').style.borderColor = "#e4e4e4";
+                    }
+                }
+                if (memail) {
+                    if (!validateEmail(memail)) {
+                        document.getElementById('m-email').style.borderColor = "red";
+                    } else {
+                        document.getElementById('m-email').style.borderColor = "#e4e4e4";
                     }
                 }
             }
@@ -454,10 +468,15 @@
                     document.getElementById("error").style.display = "revert";
                 }
                 else {
-                    if (checkbox == false) {
-                        document.getElementById("error").innerHTML = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+                    if (!validateEmail(email)) {
+                        document.getElementById("error").innerHTML = "Please input correct email"
                         document.getElementById("error").style.display = "revert";
-                    } else {
+                    }
+                    else if (checkbox == false) {
+                        document.getElementById("error").innerHTML = "please check 'Souhlasím s pravidly soutěže.'";
+                        document.getElementById("error").style.display = "revert";
+                    }
+                    else {
                         document.getElementById("error").style.display = "none";
                         $('#modal').modal('show');
                     }
@@ -469,8 +488,44 @@
                 if (phone == "") { document.getElementById('phone').style.borderColor = "red"; } else { document.getElementById('phone').style.borderColor = "#e4e4e4"; }
                 if (zipCode.trim() == "" || zipCode.trim() == null) { document.getElementById('zipCode').style.borderColor = "red"; } else { document.getElementById('zipCode').style.borderColor = "#e4e4e4"; }
                 if (receiptCode.trim() == "" || receiptCode.trim() == null) { document.getElementById('receiptCode').style.borderColor = "red"; } else { document.getElementById('receiptCode').style.borderColor = "#e4e4e4"; }
-                if (checkbox == false) { }
             }
+
+            function sendMobile() {
+                var mfirstName = document.getElementById("m-firstName").value;
+                var mlastName = document.getElementById("m-lastName").value;
+                var memail = document.getElementById("m-email").value;
+                var mphone = document.getElementById("m-phone").value;
+                var mzipCode = document.getElementById("m-zipCode").value;
+                var mreceiptCode = document.getElementById("m-receiptCode").value;
+                var mcheckbox1 = $("#m-check1").is(":checked");
+                var mcheckbox2 = $("#m-check2").is(":checked");
+                if (mfirstName.trim() == "" || mlastName.trim() == "" || memail == "" || mphone == "" || mzipCode == "" || mreceiptCode == "") {
+                    document.getElementById("m-error").innerHTML = "Vyplňte prosím červeně označená políčka a klikněte na „Poslat“.";
+                    document.getElementById("m-error").style.display = "revert";
+                }
+                else {
+                    if (!validateEmail(memail)) {
+                        document.getElementById("m-error").innerHTML = "Please input correct email"
+                        document.getElementById("m-error").style.display = "revert";
+                    }
+                    else if (mcheckbox1 == false || mcheckbox2 == false) {
+                        document.getElementById("m-error").innerHTML = "please check 'Souhlasím s pravidly soutěže.'";
+                        document.getElementById("m-error").style.display = "revert";
+                    }
+                    else {
+                        document.getElementById("m-error").style.display = "none";
+                        $('#modal').modal('show');
+                    }
+                }
+
+                if (mfirstName.trim() == "" || mfirstName.trim() == null) { document.getElementById('m-firstName').style.borderColor = "red"; } else { document.getElementById('m-firstName').style.borderColor = "#e4e4e4"; }
+                if (mlastName.trim() == "" || mlastName.trim() == null) { document.getElementById('m-lastName').style.borderColor = "red"; } else { document.getElementById('m-lastName').style.borderColor = "#e4e4e4"; }
+                if (memail == "" || !validateEmail(memail)) { document.getElementById('m-email').style.borderColor = "red"; } else { document.getElementById('m-email').style.borderColor = "#e4e4e4"; }
+                if (mphone == "") { document.getElementById('m-phone').style.borderColor = "red"; } else { document.getElementById('m-phone').style.borderColor = "#e4e4e4"; }
+                if (mzipCode.trim() == "" || mzipCode.trim() == null) { document.getElementById('m-zipCode').style.borderColor = "red"; } else { document.getElementById('m-zipCode').style.borderColor = "#e4e4e4"; }
+                if (mreceiptCode.trim() == "" || mreceiptCode.trim() == null) { document.getElementById('m-receiptCode').style.borderColor = "red"; } else { document.getElementById('m-receiptCode').style.borderColor = "#e4e4e4"; }
+            }
+
         </script>
     </main>
 </body>
