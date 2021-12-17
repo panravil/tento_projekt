@@ -1171,7 +1171,7 @@ and (orientation: landscape){
     .brand-content{
         text-align: center !important;
         letter-spacing: 5px;
-        padding: 0 15% !important;
+        padding: 0 5% !important;
     }
     .brand-child{
         display: block;
@@ -1387,7 +1387,7 @@ and (orientation: landscape){
         padding: 30px 10px;
     }
     .brand-content{
-        letter-spacing: 3px;
+        
     }
     .sec4 div:nth-child(2){
         font-size: 16px;
