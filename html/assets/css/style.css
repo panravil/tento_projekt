@@ -555,9 +555,12 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     font-size: 20px;
     margin-top: 30px;
     color: white;
-    text-align: left !important;
+    /* text-align: left !important; */
     line-height: 25px;
     text-transform: uppercase;
+    width: 100% !important;
+    padding: 0 !important;
+    min-height: 50px;
 }
 
 .brand div {
@@ -565,12 +568,14 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 .brand-content {
-    text-align: left !important;
-    margin-top: 35px;
+    width: 100% !important;
+    text-align: justify !important;
+    margin-top: 15px;
     font-family: 'Boing-Light', sans-serif;
     font-size: 18px;
     color: #a3beb2;
     line-height: 30px;
+    padding: 0 !important;
 }
 
 .sec4 {
@@ -813,6 +818,11 @@ table div{
 
 .brand-child{
     display: contents;
+    width: 50%;
+}
+.brand-child div{
+    width: 25%;
+    padding: 20px;
 }
 
 @media only screen 
@@ -1011,6 +1021,7 @@ and (orientation: landscape){
     }
     .brand-title{
         text-align: center !important;
+        min-height: 25px;
     }
     .brand-content{
         letter-spacing: 2px;
@@ -1020,9 +1031,16 @@ and (orientation: landscape){
     }
 
     .brand-child{
+        width: 100%;
         display: flex;
         justify-content: space-around;
     }
+
+    .brand-child div{
+        width: 50%;
+        padding: 20px;
+    }
+
     .footer img{
         width: 35px;
     }
@@ -1138,9 +1156,22 @@ and (orientation: landscape){
 }
 @media only screen and (max-width: 768px) {
 
+
+    /* .brand-child{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    } */
+
+    .brand-child div{
+        width: 100%;
+        padding: 20px;
+    }
+
     .brand-content{
         text-align: center !important;
         letter-spacing: 5px;
+        padding: 0 15% !important;
     }
     .brand-child{
         display: block;
