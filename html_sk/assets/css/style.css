@@ -575,7 +575,6 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     font-size: 18px;
     color: #a3beb2;
     line-height: 30px;
-    padding: 0 10px!important;
 }
 
 .sec4 {
@@ -844,6 +843,9 @@ table div{
         justify-content: space-between;
         padding-right: 0px !important;
     }
+    .mobile-menu{
+        top: 80px !important;
+    }
     .hamburger{
         display: block;
         width: 60px;
@@ -852,7 +854,7 @@ table div{
         height: 6px;
     }
     .menu{
-        display: none !important;
+        display: none;
     }
     .sheep{
         width: 52% !important;

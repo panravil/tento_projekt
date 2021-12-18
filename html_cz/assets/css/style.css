@@ -843,6 +843,9 @@ table div{
         justify-content: space-between;
         padding-right: 0px !important;
     }
+    .mobile-menu{
+        top: 80px !important;
+    }
     .hamburger{
         display: block;
         width: 60px;
