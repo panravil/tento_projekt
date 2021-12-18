@@ -197,7 +197,7 @@
                     </tr>
                     <tr>
                         <td class="error" id="error">
-                            Vyplňte prosím červeně označená políčka a klikněte na „Poslat“.
+                            Vyplňte prosím červeně označená políčka a klikněte na 'Odeslat'.
                         </td>
                     </tr>
                 </table>
@@ -265,7 +265,7 @@
                     </tr>
                     <tr>
                         <td class="error" id="m-error">
-                            Vyplňte prosím červeně označená políčka a klikněte na „Poslat“.
+                            Vyplňte prosím červeně označená políčka a klikněte na 'Odeslat'.
                         </td>
                     </tr>
                 </table>
@@ -470,16 +470,16 @@
                 var checkbox = $("#check").is(":checked");
 
                 if (firstName.trim() == "" || lastName.trim() == "" || email == "" || phone == "" || zipCode == "" || receiptCode == "") {
-                    document.getElementById("error").innerHTML = "Vyplňte prosím červeně označená políčka a klikněte na „Poslat“.";
+                    document.getElementById("error").innerHTML = "Vyplňte prosím červeně označená políčka a klikněte na 'Odeslat'.";
                     document.getElementById("error").style.display = "revert";
                 }
                 else {
                     if (!validateEmail(email)) {
-                        document.getElementById("error").innerHTML = "Please input correct email"
+                        document.getElementById("error").innerHTML = "Zadejte prosím správný e-mail."
                         document.getElementById("error").style.display = "revert";
                     }
                     else if (checkbox == false) {
-                        document.getElementById("error").innerHTML = "please check 'Souhlasím s pravidly soutěže.'";
+                        document.getElementById("error").innerHTML = "Zaškrtněte prosím: 'Souhlasím s pravidly soutěže'.";
                         document.getElementById("error").style.display = "revert";
                     }
                     else {
@@ -506,16 +506,16 @@
                 var mcheckbox1 = $("#m-check1").is(":checked");
                 var mcheckbox2 = $("#m-check2").is(":checked");
                 if (mfirstName.trim() == "" || mlastName.trim() == "" || memail == "" || mphone == "" || mzipCode == "" || mreceiptCode == "") {
-                    document.getElementById("m-error").innerHTML = "Vyplňte prosím červeně označená políčka a klikněte na „Poslat“.";
+                    document.getElementById("m-error").innerHTML = "Vyplňte prosím červeně označená políčka a klikněte na 'Odeslat'.";
                     document.getElementById("m-error").style.display = "revert";
                 }
                 else {
                     if (!validateEmail(memail)) {
-                        document.getElementById("m-error").innerHTML = "Please input correct email"
+                        document.getElementById("m-error").innerHTML = "Zadejte prosím správný e-mail."
                         document.getElementById("m-error").style.display = "revert";
                     }
                     else if (mcheckbox1 == false || mcheckbox2 == false) {
-                        document.getElementById("m-error").innerHTML = "please check 'Souhlasím s pravidly soutěže.'";
+                        document.getElementById("m-error").innerHTML = "Zaškrtněte prosím: 'Souhlasím s pravidly soutěže'.";
                         document.getElementById("m-error").style.display = "revert";
                     }
                     else {

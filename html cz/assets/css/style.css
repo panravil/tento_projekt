@@ -830,6 +830,30 @@ table div{
   and (max-height: 1366px) 
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    .logo-img{
+        width: 120px !important;
+    }
+    .header-contain{
+        padding: 10px !important;
+        align-items: center;
+    }
+    .header-content{
+        display: flex;
+        padding: 15px 0 0 0;
+        justify-content: space-between;
+        padding-right: 0px !important;
+    }
+    .hamburger{
+        display: block;
+        width: 60px;
+    }
+    .hamburger span{
+        height: 6px;
+    }
+    .menu{
+        display: none;
+    }
     .sheep{
         width: 52% !important;
         right: 0.5%
