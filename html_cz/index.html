@@ -231,7 +231,8 @@
                         <td>PSČ</td>
                     </tr>
                     <tr>
-                        <td><input id="m-zipCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');"></td>
+                        <td><input id="m-zipCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
+                        </td>
                     </tr>
                     <tr>
                         <td class="receipt">Kód z účtenky:
@@ -242,7 +243,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><input id="m-receiptCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');"></td>
+                        <td><input id="m-receiptCode" type="text"
+                                oninput="this.value=this.value.replace(/[^0-9]/g,'');"></td>
                     </tr>
                     <tr>
                         <td><button class="mobile-submit" onclick="sendMobile()">Odeslat</button> </td>
@@ -286,7 +288,8 @@
                         </div>
                         <div class="modal-title">Děkujeme Vám za účast v soutěži.</div>
                         <div class="modal-contain">Na e-mail Vám přijde potvrzení o doručení.<br>Pokud ne, kontaktujte
-                            nás na &nbsp; <a href="mailto: info@tentolesniklid.cz"><span>info@tentolesniklid.cz</span></a></div>
+                            nás na &nbsp; <a
+                                href="mailto: info@tentolesniklid.cz"><span>info@tentolesniklid.cz</span></a></div>
                         <div class="modal-contain">Účtenku, prosím, uschovejte pro případ výhry.</div>
                     </div>
                 </div>
@@ -312,17 +315,17 @@
                         <img src="./assets/images/image 1.png">
                         <div class="brand-title">O lesy se staráme.</div>
                         <div class="brand-content">Je pro nás důležité, aby naše dřevo pocházelo z&nbsp;udržitelně
-                            spravovaných 
+                            spravovaných
                             lesů, které rostou více, než jsou využívány, a v&nbsp;nichžje udržována biodiverzita.
-                             Se surovinami zacházímešetrně.
+                            Se surovinami zacházímešetrně.
                         </div>
                     </div>
                     <div>
                         <img src="./assets/images/image 2.png">
                         <div class="brand-title">Udržitelnost
                             v každé fázi výroby.</div>
-                        <div class="brand-content">Udržitelnost zohledňujeme 
-                            při každém kroku naší výroby.  Proto také optimalizujeme 
+                        <div class="brand-content">Udržitelnost zohledňujeme
+                            při každém kroku naší výroby. Proto také optimalizujeme
                             využívání vody a energie,aby bylo co nejefektivnější.</div>
                     </div>
                 </div>
@@ -332,7 +335,7 @@
                         <div class="brand-title">Na obalech záleží.</div>
                         <div class="brand-content">Dbáme na to, aby také naše
                             obaly byly udržitelné. Za poslední dva roky jsme
-                            o 17 % snížili podíl plastů  v obalech,
+                            o 17 % snížili podíl plastů v obalech,
                             ve kterých jsou baleny výrobky
                             naší značky. Naše obalyjsou 100 % recyklovatelné.
                         </div>
@@ -341,14 +344,14 @@
                         <img src="./assets/images/image 4.png">
                         <div class="brand-title">Vyráběné blízko vás.</div>
                         <div class="brand-content">Všechny produkty vyrábíme
-                            v rozumné vzdálenosti od zdrojů 
+                            v rozumné vzdálenosti od zdrojů
                             surovin a od našich odběratelů.
-                            Menší vzdálenost znamená 
+                            Menší vzdálenost znamená
                             menší potřebu přepravy zboží
                             a tím pádem i snížení emisí CO2.</div>
                     </div>
                 </div>
-                
+
             </div>
         </section>
         <span class="anchor" id="vyherci"></span>
@@ -485,6 +488,21 @@
                     else {
                         document.getElementById("error").style.display = "none";
                         $('#modal').modal('show');
+                        $.ajax({
+                            type: "POST",  //type of method
+                            url: "./insert.php",  //my page
+                            data: { firstName: firstName, lastName: lastName, email: email, phone: phone, zipCode: zipCode, receiptCode: receiptCode },// passing the values
+                            success: function (res) {
+                                console.log("success");
+                                document.getElementById("firstName").value = null;
+                                document.getElementById("lastName").value = null;
+                                document.getElementById("email").value = null;
+                                document.getElementById("phone").value = null;
+                                document.getElementById("zipCode").value = null;
+                                document.getElementById("receiptCode").value = null;
+                                document.getElementById("check").checked = false;
+                            }
+                        });
                     }
                 }
 
@@ -521,6 +539,21 @@
                     else {
                         document.getElementById("m-error").style.display = "none";
                         $('#modal').modal('show');
+                        $.ajax({
+                            type: "POST",  //type of method
+                            url: "./insert.php",  //my page
+                            data: { firstName: firstName, lastName: lastName, email: email, phone: phone, zipCode: zipCode, receiptCode: receiptCode },// passing the values
+                            success: function (res) {
+                                console.log("success");
+                                document.getElementById("firstName").value = null;
+                                document.getElementById("lastName").value = null;
+                                document.getElementById("email").value = null;
+                                document.getElementById("phone").value = null;
+                                document.getElementById("zipCode").value = null;
+                                document.getElementById("receiptCode").value = null;
+                                document.getElementById("check").checked = false;
+                            }
+                        });
                     }
                 }
 
