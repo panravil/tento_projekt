@@ -569,7 +569,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 
 .brand-content {
     width: 100% !important;
-    text-align: justify !important;
+    text-align: start !important;
     margin-top: 15px;
     font-family: 'Boing-Light', sans-serif;
     font-size: 18px;
@@ -1416,6 +1416,9 @@ and (orientation: landscape){
         
     }
     .sec4 div:nth-child(2){
+        font-size: 16px;
+    }
+    .sec4 div:nth-child(4) label{
         font-size: 16px;
     }
     .sec4 div:nth-child(4){
