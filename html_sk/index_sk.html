@@ -483,6 +483,21 @@
                     else {
                         document.getElementById("error").style.display = "none";
                         $('#modal').modal('show');
+                        $.ajax({
+                            type: "POST",  //type of method
+                            url: "./insert.php",  //my page
+                            data: { firstName: firstName, lastName: lastName, email: email, phone: phone, zipCode: zipCode, receiptCode: receiptCode },// passing the values
+                            success: function (res) {
+                                console.log("success");
+                                document.getElementById("firstName").value = null;
+                                document.getElementById("lastName").value = null;
+                                document.getElementById("email").value = null;
+                                document.getElementById("phone").value = null;
+                                document.getElementById("zipCode").value = null;
+                                document.getElementById("receiptCode").value = null;
+                                document.getElementById("check").checked = false;
+                            }
+                        });
                     }
                 }
 
