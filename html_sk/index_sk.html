@@ -42,11 +42,11 @@
 
         <div class="mobile-menu mhide" id="mobile-menu">
             <ul class="list-items">
-                    <li class="list-item"><a href="#jak-soutezit">Ako súťažiť</a></li>
-                    <li class="list-item"><a href="#Vyplnte-formular">Vyplňte formulár</a></li>
-                    <li class="list-item"><a href="#o-tento">O Tento</a></li>
-                    <li class="list-item"><a href="#vyherci">Výhercovia</a></li>
-                    <li class="list-item"><a href="#kontakt">Kontakt</a></li>
+                <li class="list-item"><a href="#jak-soutezit">Ako súťažiť</a></li>
+                <li class="list-item"><a href="#Vyplnte-formular">Vyplňte formulár</a></li>
+                <li class="list-item"><a href="#o-tento">O Tento</a></li>
+                <li class="list-item"><a href="#vyherci">Výhercovia</a></li>
+                <li class="list-item"><a href="#kontakt">Kontakt</a></li>
             </ul>
             </ul>
         </div>
@@ -62,17 +62,20 @@
     <main class="index">
         <span class="anchor" id="index"></span>
         <section class="banner-img">
-            <h2 class="banner-text-sm  wow fadeInUp" data-wow-delay="0.3s">Vyhrajte každý týždeň <br> pobyt &nbsp;v pokoji
+            <h2 class="banner-text-sm  wow fadeInUp" data-wow-delay="0.3s">Vyhrajte každý týždeň <br> pobyt &nbsp;v
+                pokoji
                 lesa <br>v hodnote 1 600 eur!</h2>
             <h4 class="banner-text-bi wow fadeInUp" data-wow-delay="0.6s">Alebo závesné kreslo.</h4>
             <div class="banner-text-rd wow fadeInUp" data-wow-delay="0.9s">
-                <div>Súťažíme každý 
-                    <br>týždeň o:<br> 1x pobyt &nbsp;v lese<br>5x závesné kreslo</div>
+                <div>Súťažíme každý
+                    <br>týždeň o:<br> 1x pobyt &nbsp;v lese<br>5x závesné kreslo
+                </div>
                 <div>V období<br>1. 2. – 28. 3.<br>2022</div>
             </div>
-            <div class="banner-text-end wow fadeInUp" data-wow-delay="1.2s">Práve prebieha 2. týždeň súťaže <label>(8. 2.
+            <div class="banner-text-end wow fadeInUp" data-wow-delay="1.2s">Práve prebieha 2. týždeň súťaže <label>(8.
+                    2.
                     – 14. 2. 2022),</label> <br>
-                    výhercov losujeme <label>15. 2. 2022.</label>
+                výhercov losujeme <label>15. 2. 2022.</label>
             </div>
             <div class="sheep">
                 <img src="./assets/images/Lamb.png">
@@ -178,9 +181,10 @@
                         <td>PSČ:</td>
                         <td class="receipt-pc">Kód z účtenky:
                             <div class="notification">
-                                Zadajte, prosím, <span class="f-m">posledné 4 znaky kódu BKP</span> na vašej účtenke,<br>
+                                Zadajte, prosím, <span class="f-m">posledné 4 znaky kódu BKP</span> na vašej
+                                účtenke,<br>
                                 či posledné 4 čísla elektronickej faktúry v prípade online nákupu.<br>
-                                Účtenku si schovajte, v prípade výhry ju budete potrebovať. 
+                                Účtenku si schovajte, v prípade výhry ju budete potrebovať.
                             </div>
                         </td>
                     </tr>
@@ -233,7 +237,8 @@
                         <td>PSČ</td>
                     </tr>
                     <tr>
-                        <td><input id="m-zipCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');"></td>
+                        <td><input id="m-zipCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
+                        </td>
                     </tr>
                     <tr>
                         <td class="receipt">Kód z účtenky:
@@ -244,7 +249,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><input id="m-receiptCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');"></td>
+                        <td><input id="m-receiptCode" type="text"
+                                oninput="this.value=this.value.replace(/[^0-9]/g,'');"></td>
                     </tr>
                     <tr>
                         <td><button class="mobile-submit" onclick="sendMobile()">Odoslať</button> </td>
@@ -287,7 +293,9 @@
                             <img src="./assets/images/Tento-Logo.png">
                         </div>
                         <div class="modal-title">Ďakujeme vám za účasť v súťaži.</div>
-                        <div class="modal-contain">Potvrdenie o doručení dostanete e-mailom. <br> Ak nie, kontaktujte nás na &nbsp; <a href="mailto: info@tentolesnypokoj.sk"><span>info@tentolesnypokoj.sk</span></a></div>
+                        <div class="modal-contain">Potvrdenie o doručení dostanete e-mailom. <br> Ak nie, kontaktujte
+                            nás na &nbsp; <a
+                                href="mailto: info@tentolesnypokoj.sk"><span>info@tentolesnypokoj.sk</span></a></div>
                         <div class="modal-contain">Účtenku si schovajte, v prípade výhry ju budete potrebovať.</div>
                     </div>
                 </div>
@@ -307,34 +315,37 @@
                     ng-show="showvideo">
                 </iframe>
             </div>
-            <div class="brand wow fadeInUp" data-wow-delay="0.3s">
-                <div class="brand-child">
-                    <div>
-                        <img src="./assets/images/image 1.png">
-                        <div class="brand-title" style="padding: 0px 10px">O lesy sa staráme.</div>
-                        <div class="brand-content" style="padding: 0px 10px">Je pre nás dôležité, aby naše drevo pochádzalo z udržateľne
-                        spravovaných lesov, ktoré rastú viac, než sú využívané, a v ktorých je udržiavaná biodiverzita. So surovinami zaobchádzame šetrne.</div>
-                    </div>
-                    <div>
-                        <img src="./assets/images/image 2.png">
-                        <div class="brand-title" style="padding: 0px 10px">Udržateľnosť v každej fáze výroby.</div>
-                        <div class="brand-content" style="padding: 0px 10px">Udržateľnosť zohľadňujeme pri každom kroku našej výroby. Preto optimalizujeme využívanie vody a energie, aby boli čo najefektívnejšie.</div>
+            <div class="brand row wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-md-6 col-lg-3">
+                    <img src="./assets/images/image 1.png">
+                    <div class="brand-title" style="padding: 0px 10px">O lesy sa staráme.</div>
+                    <div class="brand-content" style="padding: 0px 10px">Je pre nás dôležité, aby naše drevo pochádzalo
+                        z udržateľne
+                        spravovaných lesov, ktoré rastú viac, než sú využívané, a v ktorých je udržiavaná biodiverzita.
+                        So surovinami zaobchádzame šetrne.</div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <img src="./assets/images/image 2.png">
+                    <div class="brand-title" style="padding: 0px 10px">Udržateľnosť v každej fáze výroby.</div>
+                    <div class="brand-content" style="padding: 0px 10px">Udržateľnosť zohľadňujeme pri každom kroku
+                        našej výroby. Preto optimalizujeme využívanie vody a energie, aby boli čo najefektívnejšie.
                     </div>
                 </div>
-                <div class="brand-child">
-                    <div>
-                        <img src="./assets/images/image 3.png">
-                        <div class="brand-title" style="padding: 0px 10px">Na obaloch záleží.</div>
-                        <div class="brand-content" style="padding: 0px 10px">Dbáme na to, aby aj naše obaly boli udržateľné. Za posledné dva roky sme o 17 % znížili podiel plastov v obaloch, v ktorých sú balené výrobky značky Tento. Do roku 2030 plánujeme mať ponuku našich produktov bez plastov.</div>
-                    </div>
-                    <div>
-                        <img src="./assets/images/image 4.png">
-                        <div class="brand-title" style="padding: 0px 10px">Vyrábané blízko vás - lokálne.</div>
-                        <div class="brand-content" style="padding: 0px 10px">Všetky produkty vyrábame v rozumnej vzdialenosti od zdrojov surovín a od našich odberateľov. 
-                            Menšia vzdialenosť znamená menšiu potrebu prepravy tovaru a tým pádom aj zníženie emisií CO2.</div>
+                <div class="col-md-6 col-lg-3">
+                    <img src="./assets/images/image 3.png">
+                    <div class="brand-title" style="padding: 0px 10px">Na obaloch záleží.</div>
+                    <div class="brand-content" style="padding: 0px 10px">Dbáme na to, aby aj naše obaly boli udržateľné.
+                        Za posledné dva roky sme o 17 % znížili podiel plastov v obaloch, v ktorých sú balené výrobky
+                        značky Tento. Do roku 2030 plánujeme mať ponuku našich produktov bez plastov.</div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <img src="./assets/images/image 4.png">
+                    <div class="brand-title" style="padding: 0px 10px">Vyrábané blízko vás - lokálne.</div>
+                    <div class="brand-content" style="padding: 0px 10px">Všetky produkty vyrábame v rozumnej
+                        vzdialenosti od zdrojov surovín a od našich odberateľov.
+                        Menšia vzdialenosť znamená menšiu potrebu prepravy tovaru a tým pádom aj zníženie emisií CO2.
                     </div>
                 </div>
-                
             </div>
         </section>
         <span class="anchor" id="vyherci"></span>
@@ -343,7 +354,8 @@
                 Výhercovia
             </div>
             <div class="sec5-content wow fadeInUp" data-wow-delay="0.3s">
-                <a class="sec5-content" data-toggle="collapse" data-target="#vyherci-display">Zoznam výhercov z 1.týždňa súťaže
+                <a class="sec5-content" data-toggle="collapse" data-target="#vyherci-display">Zoznam výhercov z 1.týždňa
+                    súťaže
                     <br class="sp-br" /> (1. 2. – 7. 2. 2022)</a>
             </div>
 

@@ -545,9 +545,9 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 .brand {
-    display: flex;
     padding: 80px 15%;
-    justify-content: space-between;
+    width: 100% !important;
+    margin:0 !important;
 }
 
 .brand-title {
@@ -555,7 +555,6 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     font-size: 20px;
     margin-top: 30px;
     color: white;
-    /* text-align: left !important; */
     line-height: 25px;
     text-transform: uppercase;
     width: 100% !important;
@@ -815,15 +814,6 @@ table div{
     color: #006944;
 }
 
-.brand-child{
-    display: contents;
-    width: 50%;
-}
-.brand-child div{
-    width: 25%;
-    padding: 20px;
-}
-
 @media only screen 
   and (min-width: 1024px) 
   and (max-height: 1366px) 
@@ -1055,18 +1045,6 @@ and (orientation: landscape){
     .brand div{
         margin-top: 30px;
     }
-
-    .brand-child{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .brand-child div{
-        width: 50%;
-        padding: 20px;
-    }
-
     .footer img{
         width: 35px;
     }
@@ -1182,27 +1160,11 @@ and (orientation: landscape){
 }
 @media only screen and (max-width: 768px) {
 
-
-    /* .brand-child{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    } */
-
-    .brand-child div{
-        width: 100%;
-        padding: 20px;
-    }
-
     .brand-content{
         text-align: center !important;
         letter-spacing: 5px;
         padding: 0 5% !important;
     }
-    .brand-child{
-        display: block;
-    }
-
     .banner-img{
         max-height: none;
     }
