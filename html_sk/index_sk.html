@@ -264,14 +264,6 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <div>
-                                <input type="checkbox" name="m-check2" id="m-check2" class="question-check"><label
-                                    for="m-check2">Súhlasím s <a href="">pravidlami súťaže.</a></label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
                         <td class="error" id="m-error">
                             Vyplňte polia označené červenou farbou a kliknite na "Odoslať".
                         </td>
@@ -527,7 +519,6 @@
                 var mzipCode = document.getElementById("m-zipCode").value;
                 var mreceiptCode = document.getElementById("m-receiptCode").value;
                 var mcheckbox1 = $("#m-check1").is(":checked");
-                var mcheckbox2 = $("#m-check2").is(":checked");
                 if (mfirstName.trim() == "" || mlastName.trim() == "" || memail == "" || mphone == "" || mzipCode == "" || mreceiptCode == "") {
                     document.getElementById("m-error").innerHTML = "Vyplňte polia označené červenou farbou a kliknite na 'Odoslať'.";
                     document.getElementById("m-error").style.display = "revert";
@@ -557,7 +548,6 @@
                                 document.getElementById("m-zipCode").value = null;
                                 document.getElementById("m-receiptCode").value = null;
                                 document.getElementById("m-check1").checked = false;
-                                document.getElementById("m-check2").checked = false;
                             }
                         });
                     }
