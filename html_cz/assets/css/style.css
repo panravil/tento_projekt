@@ -1567,7 +1567,6 @@ and (orientation: landscape){
         top: calc(18% - 65px);
         font-size: 57px;
         line-height: 60px;
-        color: red;
     }
     .banner-text-bi{
         top: calc(18% - 65px + 180px);
@@ -1636,7 +1635,6 @@ and (orientation: landscape){
         top: calc(18% - 65px) !important;
         font-size: 70px !important;
         line-height: 73px !important;
-        color: red !important;
     }
     .banner-text-bi{
         top: calc(18% - 65px + 219px) !important;
