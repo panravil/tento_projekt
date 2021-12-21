@@ -1374,9 +1374,6 @@ and (orientation: landscape){
     .brand{
         padding: 30px 10px;
     }
-    .brand-content{
-        
-    }
     .sec4 div:nth-child(2){
         font-size: 16px;
         padding-left: 5px;
