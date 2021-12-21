@@ -428,6 +428,12 @@
                 e.stopPropagation();
                 $(this).addClass('active');
             });
+
+            $(document).on('click', '.receipt-pc', function (e) {
+                e.stopPropagation();
+                $(this).addClass('active');
+            });
+
             $(document).on('click', 'body', function (e) {
                 $('.receipt').removeClass('active');
                 $(".mobile-menu").addClass("mhide").removeClass("mshow");
