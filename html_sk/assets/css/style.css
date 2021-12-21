@@ -624,6 +624,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     font-size: 23px;
     color: #006944;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 footer {

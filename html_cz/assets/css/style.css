@@ -624,6 +624,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     font-size: 23px;
     color: #006944;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 footer {
@@ -857,6 +858,7 @@ table div{
         top: calc(18% - 65px) !important;
         font-size: 70px;
         line-height: 73px;
+        color: red !important;
     }
     .banner-text-bi{
         top: calc(18% - 65px + 219px) !important;
