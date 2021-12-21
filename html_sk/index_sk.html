@@ -534,6 +534,22 @@
                     else {
                         document.getElementById("m-error").style.display = "none";
                         $('#modal').modal('show');
+                        $.ajax({
+                            type: "POST",  //type of method
+                            url: "./insert.php",  //my page
+                            data: { firstName: mfirstName, lastName: mlastName, email: memail, phone: mphone, zipCode: mzipCode, receiptCode: mreceiptCode },// passing the values
+                            success: function (res) {
+                                console.log("success");
+                                document.getElementById("m-firstName").value = null;
+                                document.getElementById("m-lastName").value = null;
+                                document.getElementById("m-email").value = null;
+                                document.getElementById("m-phone").value = null;
+                                document.getElementById("m-zipCode").value = null;
+                                document.getElementById("m-receiptCode").value = null;
+                                document.getElementById("#m-check1").checked = false;
+                                document.getElementById("#m-check2").checked = false;
+                            }
+                        });
                     }
                 }
 

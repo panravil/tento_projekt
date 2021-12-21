@@ -537,16 +537,17 @@
                         $.ajax({
                             type: "POST",  //type of method
                             url: "./insert.php",  //my page
-                            data: { firstName: firstName, lastName: lastName, email: email, phone: phone, zipCode: zipCode, receiptCode: receiptCode },// passing the values
+                            data: { firstName: mfirstName, lastName: mlastName, email: memail, phone: mphone, zipCode: mzipCode, receiptCode: mreceiptCode },// passing the values
                             success: function (res) {
                                 console.log("success");
-                                document.getElementById("firstName").value = null;
-                                document.getElementById("lastName").value = null;
-                                document.getElementById("email").value = null;
-                                document.getElementById("phone").value = null;
-                                document.getElementById("zipCode").value = null;
-                                document.getElementById("receiptCode").value = null;
-                                document.getElementById("check").checked = false;
+                                document.getElementById("m-firstName").value = null;
+                                document.getElementById("m-lastName").value = null;
+                                document.getElementById("m-email").value = null;
+                                document.getElementById("m-phone").value = null;
+                                document.getElementById("m-zipCode").value = null;
+                                document.getElementById("m-receiptCode").value = null;
+                                document.getElementById("#m-check1").checked = false;
+                                document.getElementById("#m-check2").checked = false;
                             }
                         });
                     }
