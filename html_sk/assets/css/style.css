@@ -756,6 +756,10 @@ tr td:nth-child(1){
 .receipt-pc:hover .notification {
     display: block;
 }
+
+.receipt-pc.active .notification{
+    display: block;
+}
 .receipt,
 .receipt-pc{
     position: relative;

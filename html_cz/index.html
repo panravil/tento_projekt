@@ -433,8 +433,14 @@
                 e.stopPropagation();
                 $(this).addClass('active');
             });
+            
+            $(document).on('mouseleave', '.receipt-pc', function (e) {
+                $('.receipt-pc').removeClass('active');
+            });
+           
             $(document).on('click', 'body', function (e) {
                 $('.receipt').removeClass('active');
+                $('.receipt-pc').removeClass('active');
                 $(".mobile-menu").addClass("mhide").removeClass("mshow");
             });
 
