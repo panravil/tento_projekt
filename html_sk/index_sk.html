@@ -259,7 +259,7 @@
                         <td>
                             <div>
                                 <input type="checkbox" name="m-check1" id="m-check1" class="question-check"><label
-                                    for="m-check1">Súhlasím so <a href="">spracovaním osobných údajov.</a></label>
+                                    for="m-check1">Súhlasím s <a href="">pravidlami súťaže.</a></label>
                             </div>
                         </td>
                     </tr>
@@ -528,7 +528,7 @@
                         document.getElementById("m-error").innerHTML = "Zadajte prosím správny e-mail."
                         document.getElementById("m-error").style.display = "revert";
                     }
-                    else if (mcheckbox1 == false || mcheckbox2 == false) {
+                    else if (mcheckbox1 == false) {
                         document.getElementById("m-error").innerHTML = "Zaškrtnite prosím: 'Súhlasím s pravidlami súťaže'.";
                         document.getElementById("m-error").style.display = "revert";
                     }
