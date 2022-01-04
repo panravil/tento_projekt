@@ -62,13 +62,12 @@
     <main class="index">
         <span class="anchor" id="index"></span>
         <section class="banner-img">
-            <h2 class="banner-text-sm  wow fadeInUp" data-wow-delay="0.3s">Vyhrajte každý týždeň <br> pobyt &nbsp;v
-                pokoji
+            <h2 class="banner-text-sm  wow fadeInUp" data-wow-delay="0.3s">Vyhrajte každý týždeň <br> pobyt v&nbsp;pokoji
                 lesa <br>v hodnote 1 600 eur!</h2>
             <h4 class="banner-text-bi wow fadeInUp" data-wow-delay="0.6s">Alebo závesné kreslo.</h4>
             <div class="banner-text-rd wow fadeInUp" data-wow-delay="0.9s">
                 <div>Súťažíme každý
-                    <br>týždeň o:<br> 1x pobyt &nbsp;v lese<br>5x závesné kreslo
+                    <br>týždeň o:<br> 1x pobyt v&nbsp;lese<br>5x závesné kreslo
                 </div>
                 <div>V období<br>1. 2. – 28. 3.<br>2022</div>
             </div>
@@ -280,6 +279,7 @@
         <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
+                    <img src="./assets/images/close-icon.png" class="close-modal" id="close-modal">
                     <div class="modal-body">
                         <div>
                             <img src="./assets/images/Tento-Logo.png">
@@ -312,30 +312,30 @@
                     <img src="./assets/images/image 1.png">
                     <div class="brand-title" style="padding: 0px 10px">O lesy sa staráme.</div>
                     <div class="brand-content" style="padding: 0px 10px">Je pre nás dôležité, aby naše drevo pochádzalo
-                        z udržateľne
-                        spravovaných lesov, ktoré rastú viac, než sú využívané, a v ktorých je udržiavaná biodiverzita.
-                        So surovinami zaobchádzame šetrne.</div>
+                        z&nbsp;udržateľne
+                        spravovaných lesov, ktoré rastú viac, než&nbsp;sú využívané, a&nbsp;v&nbsp;ktorých je udržiavaná biodiverzita.
+                        So&nbsp;surovinami zaobchádzame šetrne.</div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <img src="./assets/images/image 2.png">
-                    <div class="brand-title" style="padding: 0px 10px">Udržateľnosť v každej fáze výroby.</div>
-                    <div class="brand-content" style="padding: 0px 10px">Udržateľnosť zohľadňujeme pri každom kroku
-                        našej výroby. Preto optimalizujeme využívanie vody a energie, aby boli čo najefektívnejšie.
+                    <div class="brand-title" style="padding: 0px 10px">Udržateľnosť v&nbsp;každej fáze výroby.</div>
+                    <div class="brand-content" style="padding: 0px 10px">Udržateľnosť zohľadňujeme pri&nbsp;každom kroku
+                        našej výroby. Preto optimalizujeme využívanie vody a&nbsp;energie, aby boli čo najefektívnejšie.
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <img src="./assets/images/image 3.png">
                     <div class="brand-title" style="padding: 0px 10px">Na obaloch záleží.</div>
-                    <div class="brand-content" style="padding: 0px 10px">Dbáme na to, aby aj naše obaly boli udržateľné.
-                        Za posledné dva roky sme o 17 % znížili podiel plastov v obaloch, v ktorých sú balené výrobky
-                        značky Tento. Do roku 2030 plánujeme mať ponuku našich produktov bez plastov.</div>
+                    <div class="brand-content" style="padding: 0px 10px">Dbáme na&nbsp;to, aby&nbsp;aj naše obaly boli udržateľné.
+                        Za&nbsp;posledné dva roky sme o&nbsp;17&nbsp;% znížili podiel plastov v&nbsp;obaloch, v&nbsp;ktorých sú balené výrobky
+                        značky Tento. Do&nbsp;roku 2030 plánujeme mať ponuku našich produktov bez plastov.</div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <img src="./assets/images/image 4.png">
                     <div class="brand-title" style="padding: 0px 10px">Vyrábané blízko vás - lokálne.</div>
-                    <div class="brand-content" style="padding: 0px 10px">Všetky produkty vyrábame v rozumnej
-                        vzdialenosti od zdrojov surovín a od našich odberateľov.
-                        Menšia vzdialenosť znamená menšiu potrebu prepravy tovaru a tým pádom aj zníženie emisií CO2.
+                    <div class="brand-content" style="padding: 0px 10px">Všetky produkty vyrábame v&nbsp;rozumnej
+                        vzdialenosti od&nbsp;zdrojov surovín a&nbsp;od&nbsp;našich odberateľov.
+                        Menšia vzdialenosť znamená menšiu potrebu prepravy tovaru a&nbsp;tým pádom aj zníženie emisií CO2.
                     </div>
                 </div>
             </div>
@@ -419,6 +419,10 @@
             $(document).on('click', '.receipt', function (e) {
                 e.stopPropagation();
                 $(this).addClass('active');
+            });
+
+            $(document).on('click', '.close-modal', function (e) {
+                $('#modal').modal('hide');
             });
 
             $(document).on('click', '.receipt-pc', function (e) {

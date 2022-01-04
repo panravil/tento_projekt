@@ -819,6 +819,16 @@ table div{
     color: #006944;
 }
 
+.close-modal{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 25px !important;
+    height: 25px !important;
+    cursor: pointer;
+    z-index: 111;
+}
+
 
 
 @media only screen and (max-height: 680px)
@@ -977,9 +987,6 @@ and (orientation: landscape){
         text-align: center !important;
         min-height: 25px;
     }
-    .brand-content{
-        letter-spacing: 2px;
-    }
     .brand div{
         margin-top: 30px;
     }
@@ -1100,7 +1107,6 @@ and (orientation: landscape){
 
     .brand-content{
         text-align: center !important;
-        letter-spacing: 5px;
         padding: 0 5% !important;
     }
     .banner-img{
@@ -1486,7 +1492,6 @@ and (orientation: landscape){
     }
     .brand-content{
         line-height: 23px;
-        letter-spacing: 2px;
         font-size: 16px;
     }
     .sec4 div:nth-child(2){

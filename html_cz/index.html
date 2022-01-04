@@ -61,11 +61,11 @@
     <main class="index">
         <span class="anchor" id="index"></span>
         <section class="banner-img">
-            <h2 class="banner-text-sm  wow fadeInUp" data-wow-delay="0.3s">Vyhrajte každý týden <br> pobyt &nbsp;v klidu
+            <h2 class="banner-text-sm  wow fadeInUp" data-wow-delay="0.3s">Vyhrajte každý týden <br> pobyt v&nbsp;klidu
                 lesa <br>v hodnotě 40 000 Kč!</h2>
             <h4 class="banner-text-bi wow fadeInUp" data-wow-delay="0.6s">Nebo závěsné křeslo.</h4>
             <div class="banner-text-rd wow fadeInUp" data-wow-delay="0.9s">
-                <div>Soutěžíme<br>každý týden o:<br> 1x pobyt &nbsp;v lese<br>5x závěsné křeslo</div>
+                <div>Soutěžíme<br>každý týden o:<br> 1x pobyt v lese<br>5x závěsné křeslo</div>
                 <div>V období<br>1. 2. – 28. 3.<br>2022</div>
             </div>
             <div class="banner-text-end wow fadeInUp" data-wow-delay="1.2s">Právě probíhá 2. týden soutěže <label>(8. 2.
@@ -274,6 +274,7 @@
         <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
+                    <img src="./assets/images/close-icon.png" class="close-modal" id="close-modal">
                     <div class="modal-body">
                         <div>
                             <img src="./assets/images/Tento-Logo.png">
@@ -317,27 +318,27 @@
                         v každé fázi výroby.</div>
                     <div class="brand-content">Udržitelnost zohledňujeme
                         při každém kroku naší výroby. Proto také optimalizujeme
-                        využívání vody a energie,aby bylo co nejefektivnější.</div>
+                        využívání vody a&nbsp;energie, aby bylo co nejefektivnější.</div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <img src="./assets/images/image 3.png">
                     <div class="brand-title">Na obalech záleží.</div>
                     <div class="brand-content">Dbáme na to, aby také naše
                         obaly byly udržitelné. Za poslední dva roky jsme
-                        o 17 % snížili podíl plastů v obalech,
-                        ve kterých jsou baleny výrobky
-                        naší značky. Naše obalyjsou 100 % recyklovatelné.
+                        o&nbsp;17&nbsp;% snížili podíl plastů v&nbsp;obalech,
+                        ve&nbsp;kterých jsou baleny výrobky
+                        naší značky. Naše obalyjsou 100&nbsp;% recyklovatelné.
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <img src="./assets/images/image 4.png">
                     <div class="brand-title">Vyráběné blízko vás.</div>
                     <div class="brand-content">Všechny produkty vyrábíme
-                        v rozumné vzdálenosti od zdrojů
-                        surovin a od našich odběratelů.
+                        v&nbsp;rozumné vzdálenosti od&nbsp;zdrojů
+                        surovin a&nbsp;od&nbsp;našich odběratelů.
                         Menší vzdálenost znamená
                         menší potřebu přepravy zboží
-                        a tím pádem i snížení emisí CO2.</div>
+                        a&nbsp;tím pádem i&nbsp;snížení emisí CO2.</div>
                 </div>
             </div>
         </section>
@@ -353,7 +354,7 @@
 
             <div id="vyherci-display" class="collapse">
                 <div class="sec5-content">
-                    <div class="sec5-content2"><b>Týdenní pobyt v klidu lesa</b><br></div>
+                    <div class="sec5-content2"><b>Týdenní pobyt v&nbsp;klidu lesa</b><br></div>
                     <br>
                     Karel z Prahy<br>
                     <br>
@@ -421,6 +422,10 @@
                 $(this).addClass('active');
             });
 
+            $(document).on('click', '.close-modal', function (e) {
+                $('#modal').modal('hide');
+            });
+            
             $(document).on('click', '.receipt-pc', function (e) {
                 e.stopPropagation();
                 $(this).addClass('active');
