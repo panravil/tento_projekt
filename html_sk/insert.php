@@ -30,6 +30,7 @@ $conn = new mysqli($servername, $username, $password, 'tento_php');
     $phone = $_REQUEST['phone'];
     $zip_code = $_REQUEST['zipCode'];
     $receipt_code = $_REQUEST['receiptCode'];
+    date_default_timezone_set('Europe/Prague');
     $time = date("Y-m-d H:i:s");
     if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
         $ip = $_SERVER['HTTP_CLIENT_IP'];

@@ -547,7 +547,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 .brand {
     padding: 80px 15%;
     width: 100% !important;
-    margin: 0 !important;
+    margin:0 !important;
 }
 
 .brand-title {
@@ -678,16 +678,16 @@ tr td:nth-child(1){
     width: 100%;
     background: #fff;
     z-index: 1000;
-    opacity: 0.93;
     display: flex !important;
-    top: 65px;
+    top: 60px;
     left: 0px;
 }
 .mobile-menu .list-items {
     flex-direction: column;
     transition: all 0.9s ease;
     display: flex;
-    padding: 0 30px;
+    padding-top: 0px;
+    padding-left: 8%;
     list-style: none;
     overflow: hidden;
     margin: 0;
@@ -756,6 +756,7 @@ tr td:nth-child(1){
 .receipt-pc:hover .notification {
     display: block;
 }
+
 .receipt-pc.active .notification{
     display: block;
 }
@@ -817,6 +818,7 @@ table div{
 .modal-content a{
     color: #006944;
 }
+
 .close-modal{
     position: absolute;
     left: 10px;
@@ -826,7 +828,6 @@ table div{
     cursor: pointer;
     z-index: 111;
 }
-
 
 
 
@@ -1018,9 +1019,7 @@ and (orientation: landscape){
     }
 }
 @media only screen and (max-width: 992px) {
-    .header-contain{
-        padding: 10px 10% 10px 10%;
-    }
+
     .banner-text-sm{
         top: calc(20% - 65px);
         left: 10%;
@@ -1112,9 +1111,6 @@ and (orientation: landscape){
         max-height: none;
     }
     
-    .header-contain{
-        padding: 10px;
-    }
     .sec1{
         padding-bottom: 80px;
     }
@@ -1123,7 +1119,7 @@ and (orientation: landscape){
     }
 
     .header-contain{
-        padding-bottom: 5px;
+        padding-bottom: 10px;
     }
 
     .compete-bule{
@@ -1241,14 +1237,13 @@ and (orientation: landscape){
         width: 330px;
     }
     .banner-img{
+        background-image: url(../images/header-img-m.jpg);
         min-height: 580px;
     }
     .banner-text-rd{
         top: 33%;
     }
-    .header-contain{
-        padding: 10px 20px;
-    }
+
     .header-content{
         padding-right: 0px !important;
     }
@@ -1273,6 +1268,7 @@ and (orientation: landscape){
     }
     
     .banner-img .w-100p{
+        /* background-image: url(../images/header-img.jpg); */
         height: 400px;
         width: auto;
     }
@@ -1319,11 +1315,13 @@ and (orientation: landscape){
     }
     .sec4 div:nth-child(2){
         font-size: 16px;
-    }
-    .sec4 div:nth-child(4) label{
-        font-size: 16px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     .sec4 div:nth-child(4){
+        font-size: 16px;
+    }
+    .sec4 div:nth-child(4) label{
         font-size: 16px;
     }
     .sec4 div:nth-child(3){
@@ -1383,6 +1381,8 @@ and (orientation: landscape){
     }
     .sec4 div:nth-child(4){
         margin-top: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
 }
@@ -1537,7 +1537,6 @@ and (orientation: landscape){
         width: 120px !important;
     }
     .header-contain{
-        padding: 10px !important;
         align-items: center;
     }
     .header-content{
@@ -1601,11 +1600,11 @@ and (orientation: landscape){
   and (max-height: 1367px) 
   and (orientation: portrait)
   {
+
     .logo-img{
         width: 120px !important;
     }
     .header-contain{
-        padding: 10px !important;
         align-items: center;
     }
     .header-content{
@@ -1636,8 +1635,8 @@ and (orientation: landscape){
     }
     .banner-text-sm{
         top: calc(18% - 65px) !important;
-        font-size: 70px !important;
-        line-height: 73px !important;
+        font-size: 70px;
+        line-height: 73px;
     }
     .banner-text-bi{
         top: calc(18% - 65px + 219px) !important;
@@ -1663,5 +1662,4 @@ and (orientation: landscape){
         top: 65%;
     }
 }
-
         

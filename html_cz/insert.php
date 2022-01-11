@@ -30,7 +30,8 @@ $conn = new mysqli($servername, $username, $password, 'tento_php');
     $phone = $_REQUEST['phone'];
     $zip_code = $_REQUEST['zipCode'];
     $receipt_code = $_REQUEST['receiptCode'];
-    $time = date("Y-m-d H:i:s");
+    date_default_timezone_set('Europe/Prague');
+    $time = date('m/d/Y h:i:s a', time());
     if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
         $ip = $_SERVER['HTTP_CLIENT_IP'];
     } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
@@ -64,7 +65,7 @@ $conn = new mysqli($servername, $username, $password, 'tento_php');
         . mysqli_error($conn);
     }
 
-    mysqli_close($conn);
+mysqli_close($conn);
     
     function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
         $output = NULL;
@@ -172,5 +173,40 @@ $conn = new mysqli($servername, $username, $password, 'tento_php');
         }
  
         return $is_mobile;
-     }
+    }
+
+    require 'PHPMailerAutoload.php';
+
+    $mail = new PHPMailer;
+
+    $mail->isSMTP();                                      // Set mailer to use SMTP
+    $mail->Host = 'smtp.office365.com';                       // Specify main and backup SMTP servers
+    $mail->SMTPAuth = true;                               // Enable SMTP authentication
+    $mail->Username = 'ext.kamil.teply@metsagroup.com';                 // SMTP username
+    $mail->Password = 'cwPgEaT#9n';                           // SMTP password
+    $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
+
+    $mail->From = 'from@example.com';
+    $mail->FromName = 'Mailer';
+    $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
+    $mail->addAddress('ellen@example.com');               // Name is optional
+    $mail->addReplyTo('info@example.com', 'Information');
+    $mail->addCC('cc@example.com');
+    $mail->addBCC('bcc@example.com');
+
+    $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
+    $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+    $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+    $mail->isHTML(true);                                  // Set email format to HTML
+
+    $mail->Subject = 'Here is the subject';
+    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    if(!$mail->send()) {
+        echo 'Message could not be sent.';
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
+    } else {
+        echo 'Message has been sent';
+    }
 ?>
