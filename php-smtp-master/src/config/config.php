@@ -15,12 +15,12 @@ return [
     'default' => 'primary',
     'connections' => [
         'primary' => [
-            'host' => '',
-            'port' => '',
+            'host' => 'smtp.office365.com',
+            'port' => '587',
             'secure' => null, // null, 'ssl', or 'tls'
             'auth' => false, // true if authorization required
-            'user' => '',
-            'pass' => '',
+            'user' => 'ext.kamil.teply@metsagroup.com',
+            'pass' => 'cwPgEaT#9n',
         ],
     ],
 
