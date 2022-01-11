@@ -7,4 +7,5 @@
     $mail->subject('Hello World');
     $mail->body('This is a <b>HTML</b> email.');
     $result = $mail->send();
+    echo 123;
 ?>
