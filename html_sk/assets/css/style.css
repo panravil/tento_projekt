@@ -1212,6 +1212,19 @@ and (orientation: landscape){
         width: auto !important;
     }
 }
+
+@supports ( -webkit-touch-callout : none) {
+	.banner-img {
+		background-attachment:scroll
+	}
+}
+
+@supports not ( -webkit-touch-callout : none) {
+	.banner-img{
+		background-attachment: fixed;
+	}
+}
+
 @media only screen and (max-width: 576px) {
 
     .banner-text-bi{
@@ -1268,7 +1281,7 @@ and (orientation: landscape){
     }
     
     .banner-img .w-100p{
-        /* background-image: url(../images/header-img.jpg); */
+        
         height: 400px;
         width: auto;
     }
