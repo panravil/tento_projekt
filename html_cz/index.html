@@ -181,7 +181,7 @@
                     </tr>
                     <tr>
                         <td><input id="email" onfocusout="mailValidate()"></td>
-                        <td><input id="phone" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');"></td>
+                        <td><input id="phone" type="text" oninput="this.value=this.value.replace(/[^0-9\+]/g,'');"></td>
                     </tr>
                     <tr>
                         <td>PSČ:</td>
@@ -194,8 +194,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><input id="zipCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');"></td>
-                        <td><input id="receiptCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
+                        <td><input id="zipCode" type="text"  oninput="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="5"></td>
+                        <td><input id="receiptCode" type="text" oninput="this.value=this.value.replace(/[^0-9\ \-]/g,'');">
                         </td>
                     </tr>
                     <tr>
@@ -236,13 +236,13 @@
                         <td>Telefon: </td>
                     </tr>
                     <tr>
-                        <td><input id="m-phone" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');"></td>
+                        <td><input id="m-phone" type="text" oninput="this.value=this.value.replace(/[^0-9\+]/g,'');"></td>
                     </tr>
                     <tr>
                         <td>PSČ</td>
                     </tr>
                     <tr>
-                        <td><input id="m-zipCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
+                        <td><input id="m-zipCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="5">
                         </td>
                     </tr>
                     <tr>
@@ -443,6 +443,10 @@
                 $(".mobile-menu").addClass("mhide").removeClass("mshow");
             });
 
+            function validateReceiptCode(Code){
+                const re = /^\d{4}[-\s]?(?:\d{4})?$/gm;
+                return re.test(Code);
+            }
 
             function validateEmail(email) {
                 const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -477,7 +481,7 @@
                 var receiptCode = document.getElementById("receiptCode").value;
                 var checkbox = $("#check").is(":checked");
 
-                if (firstName.trim() == "" || lastName.trim() == "" || email == "" || phone == "" || zipCode == "" || receiptCode == "") {
+                if (firstName.trim() == "" || lastName.trim() == "" || email == "" || phone == "" || zipCode == "" || zipCode.length != 5 || receiptCode == "" || !validateReceiptCode(receiptCode)) {
                     document.getElementById("error").innerHTML = "Vyplňte prosím červeně označená políčka a klikněte na 'Odeslat'.";
                     document.getElementById("error").style.display = "revert";
                 }
@@ -515,8 +519,8 @@
                 if (lastName.trim() == "" || lastName.trim() == null) { document.getElementById('lastName').style.borderColor = "red"; } else { document.getElementById('lastName').style.borderColor = "#e4e4e4"; }
                 if (email == "" || !validateEmail(email)) { document.getElementById('email').style.borderColor = "red"; } else { document.getElementById('email').style.borderColor = "#e4e4e4"; }
                 if (phone == "") { document.getElementById('phone').style.borderColor = "red"; } else { document.getElementById('phone').style.borderColor = "#e4e4e4"; }
-                if (zipCode.trim() == "" || zipCode.trim() == null) { document.getElementById('zipCode').style.borderColor = "red"; } else { document.getElementById('zipCode').style.borderColor = "#e4e4e4"; }
-                if (receiptCode.trim() == "" || receiptCode.trim() == null) { document.getElementById('receiptCode').style.borderColor = "red"; } else { document.getElementById('receiptCode').style.borderColor = "#e4e4e4"; }
+                if (zipCode.trim() == "" || zipCode.trim() == null || zipCode.length != 5) { document.getElementById('zipCode').style.borderColor = "red"; } else { document.getElementById('zipCode').style.borderColor = "#e4e4e4"; }
+                if (receiptCode.trim() == "" || receiptCode.trim() == null || !validateReceiptCode(receiptCode)) { document.getElementById('receiptCode').style.borderColor = "red"; } else { document.getElementById('receiptCode').style.borderColor = "#e4e4e4"; }
             }
 
             function sendMobile() {
@@ -527,7 +531,7 @@
                 var mzipCode = document.getElementById("m-zipCode").value;
                 var mreceiptCode = document.getElementById("m-receiptCode").value;
                 var mcheckbox1 = $("#m-check1").is(":checked");
-                if (mfirstName.trim() == "" || mlastName.trim() == "" || memail == "" || mphone == "" || mzipCode == "" || mreceiptCode == "") {
+                if (mfirstName.trim() == "" || mlastName.trim() == "" || memail == "" || mphone == "" || mzipCode == "" || mzipCode.length != 5 || mreceiptCode == "" || !validateReceiptCode(mreceiptCode)) {
                     document.getElementById("m-error").innerHTML = "Vyplňte prosím červeně označená políčka a klikněte na 'Odeslat'.";
                     document.getElementById("m-error").style.display = "revert";
                 }
@@ -565,8 +569,8 @@
                 if (mlastName.trim() == "" || mlastName.trim() == null) { document.getElementById('m-lastName').style.borderColor = "red"; } else { document.getElementById('m-lastName').style.borderColor = "#e4e4e4"; }
                 if (memail == "" || !validateEmail(memail)) { document.getElementById('m-email').style.borderColor = "red"; } else { document.getElementById('m-email').style.borderColor = "#e4e4e4"; }
                 if (mphone == "") { document.getElementById('m-phone').style.borderColor = "red"; } else { document.getElementById('m-phone').style.borderColor = "#e4e4e4"; }
-                if (mzipCode.trim() == "" || mzipCode.trim() == null) { document.getElementById('m-zipCode').style.borderColor = "red"; } else { document.getElementById('m-zipCode').style.borderColor = "#e4e4e4"; }
-                if (mreceiptCode.trim() == "" || mreceiptCode.trim() == null) { document.getElementById('m-receiptCode').style.borderColor = "red"; } else { document.getElementById('m-receiptCode').style.borderColor = "#e4e4e4"; }
+                if (mzipCode.trim() == "" || mzipCode.trim() == null || mzipCode.length != 5) { document.getElementById('m-zipCode').style.borderColor = "red"; } else { document.getElementById('m-zipCode').style.borderColor = "#e4e4e4"; }
+                if (mreceiptCode.trim() == "" || mreceiptCode.trim() == null  || !validateReceiptCode(mreceiptCode)) { document.getElementById('m-receiptCode').style.borderColor = "red"; } else { document.getElementById('m-receiptCode').style.borderColor = "#e4e4e4"; }
             }
 
         </script>
