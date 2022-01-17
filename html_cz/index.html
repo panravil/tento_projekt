@@ -24,18 +24,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-N958K2T');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N958K2T');</script>
     <!-- End Google Tag Manager -->
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N958K2T"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N958K2T" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header class="header-contain">
         <div class="logo-img">
@@ -80,7 +83,8 @@
                 <div>Soutěžíme<br>každý týden o:<br> 1x pobyt v lese<br>5x závěsné křeslo</div>
                 <div>V období<br>1. 2. – 28. 3.<br>2022</div>
             </div>
-            <div class="banner-text-end wow fadeInUp" data-wow-delay="1.2s">1. týden soutěže probíhá <label>1. 2. - 7. 2. 2022,</label><br>
+            <div class="banner-text-end wow fadeInUp" data-wow-delay="1.2s">1. týden soutěže probíhá <label>1. 2. - 7.
+                    2. 2022,</label><br>
                 výherce losujeme <label>8. 2. 2022.</label>
             </div>
             <div class="sheep">
@@ -194,8 +198,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><input id="zipCode" type="text"  oninput="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="5"></td>
-                        <td><input id="receiptCode" type="text" oninput="this.value=this.value.replace(/[^0-9\ \-]/g,'');" maxlength="4">
+                        <td><input id="zipCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+                                maxlength="5"></td>
+                        <td><input id="receiptCode" type="text"
+                                oninput="this.value=this.value.replace(/[^0-9\ \-]/g,'');" maxlength="4">
                         </td>
                     </tr>
                     <tr>
@@ -236,13 +242,15 @@
                         <td>Telefon: </td>
                     </tr>
                     <tr>
-                        <td><input id="m-phone" type="text" oninput="this.value=this.value.replace(/[^0-9\+]/g,'');"></td>
+                        <td><input id="m-phone" type="text" oninput="this.value=this.value.replace(/[^0-9\+]/g,'');">
+                        </td>
                     </tr>
                     <tr>
                         <td>PSČ</td>
                     </tr>
                     <tr>
-                        <td><input id="m-zipCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="5">
+                        <td><input id="m-zipCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+                                maxlength="5">
                         </td>
                     </tr>
                     <tr>
@@ -365,7 +373,8 @@
 
             <div id="vyherci-display" class="collapse">
                 <div class="sec5-content">
-                    <div class="sec5-content2"><b>Výherce za první týden soutěže zveřejníme ve&nbsp;čtvrtek 10.&nbsp;2.&nbsp;2022.</b><br></div>
+                    <div class="sec5-content2"><b>Výherce za první týden soutěže zveřejníme ve&nbsp;čtvrtek
+                            10.&nbsp;2.&nbsp;2022.</b><br></div>
                     <br>
                     <br>
                     <div class="sec5-content2"><b></b><br></div>
@@ -427,16 +436,16 @@
             $(document).on('click', '.close-modal', function (e) {
                 $('#modal').modal('hide');
             });
-            
+
             $(document).on('click', '.receipt-pc', function (e) {
                 e.stopPropagation();
                 $(this).addClass('active');
             });
-            
+
             $(document).on('mouseleave', '.receipt-pc', function (e) {
                 $('.receipt-pc').removeClass('active');
             });
-           
+
             $(document).on('click', 'body', function (e) {
                 $('.receipt').removeClass('active');
                 $('.receipt-pc').removeClass('active');
@@ -497,6 +506,14 @@
                             url: "./insert.php",  //my page
                             data: { firstName: firstName, lastName: lastName, email: email, phone: phone, zipCode: zipCode, receiptCode: receiptCode },// passing the values
                             success: function (res) {
+                                $.ajax({
+                                    type: "POST",  //type of method
+                                    url: "./PHPMailer/index.php",  //my page
+                                    data: { firstName: firstName, email: email },// passing the values
+                                    success: function (res) {
+                                        console.log("success message");
+                                    }
+                                });
                                 console.log("success");
                                 document.getElementById("firstName").value = null;
                                 document.getElementById("lastName").value = null;
@@ -547,6 +564,14 @@
                             url: "./insert.php",  //my page
                             data: { firstName: mfirstName, lastName: mlastName, email: memail, phone: mphone, zipCode: mzipCode, receiptCode: mreceiptCode },// passing the values
                             success: function (res) {
+                                $.ajax({
+                                    type: "POST",  //type of method
+                                    url: "./PHPMailer/index.php",  //my page
+                                    data: { firstName: mfirstName, email: memail },// passing the values
+                                    success: function (res) {
+                                        console.log("success message");
+                                    }
+                                });
                                 console.log("success");
                                 document.getElementById("m-firstName").value = null;
                                 document.getElementById("m-lastName").value = null;

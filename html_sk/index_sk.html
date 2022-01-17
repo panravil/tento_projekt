@@ -500,6 +500,14 @@
                             url: "./insert.php",  //my page
                             data: { firstName: firstName, lastName: lastName, email: email, phone: phone, zipCode: zipCode, receiptCode: receiptCode },// passing the values
                             success: function (res) {
+                                $.ajax({
+                                    type: "POST",  //type of method
+                                    url: "./PHPMailer/index.php",  //my page
+                                    data: { firstName: firstName, email: email },// passing the values
+                                    success: function (res) {
+                                        console.log("success message");
+                                    }
+                                });
                                 console.log("success");
                                 document.getElementById("firstName").value = null;
                                 document.getElementById("lastName").value = null;
@@ -550,6 +558,14 @@
                             url: "./insert.php",  //my page
                             data: { firstName: mfirstName, lastName: mlastName, email: memail, phone: mphone, zipCode: mzipCode, receiptCode: mreceiptCode },// passing the values
                             success: function (res) {
+                                $.ajax({
+                                    type: "POST",  //type of method
+                                    url: "./PHPMailer/index.php",  //my page
+                                    data: { firstName: mfirstName, email: memail },// passing the values
+                                    success: function (res) {
+                                        console.log("success message");
+                                    }
+                                });
                                 console.log("success");
                                 document.getElementById("m-firstName").value = null;
                                 document.getElementById("m-lastName").value = null;
