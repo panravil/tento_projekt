@@ -59,6 +59,10 @@ header {
     font-family: 'Boing-Medium', sans-serif;
 }
 
+a#CybotCookiebotDialogPoweredbyCybot,div#CybotCookiebotDialogPoweredByText {
+    display: none;
+}
+
 .arrow-pink{
     position: absolute;
     right: -31px;
