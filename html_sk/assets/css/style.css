@@ -403,7 +403,8 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 .sec2 a{
-    color: #006944;
+    color: #6fa287;
+    text-decoration: underline;
 }
 
 .sec2 a:hover{
@@ -703,7 +704,7 @@ tr td:nth-child(1){
     height: 0;
 }
 .mobile-menu.mshow .list-items {
-    height: 250px;
+    height: 300px;
     background-color: white;
     opacity: 0.7;
 }

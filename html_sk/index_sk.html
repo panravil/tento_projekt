@@ -65,6 +65,7 @@
                 <li class="list-item"><a href="/#Vyplnte-formular">Vyplňte formulár</a></li>
                 <li class="list-item"><a href="/#o-tento">O Tento</a></li>
                 <li class="list-item"><a href="/#vyherci">Výhercovia</a></li>
+                <li class="list-item"><a href="https://tentolesnypokoj.sk/assets/pdf/Tento_pravidla_SK.pdf" target="_blank">Pravidlá</a></li>
                 <li class="list-item"><a href="/#kontakt">Kontakt</a></li>
             </ul>
             </ul>
@@ -75,6 +76,7 @@
             <a href="/#Vyplnte-formular">Vyplňte formulár</a>
             <a href="/#o-tento">O Tento</a>
             <a href="/#vyherci">Výhercovia</a>
+            <a href="https://tentolesnypokoj.sk/assets/pdf/Tento_pravidla_SK.pdf" target="_blank">Pravidlá</a>
             <a href="/#kontakt">Kontakt</a>
         </div>
     </header>
@@ -506,6 +508,10 @@
                                     data: { firstName: firstName, email: email },// passing the values
                                     success: function (res) {
                                         console.log("success message");
+                                    },
+                                    error: function (err) {
+                                        console.log(111);
+                                        console.log(err);
                                     }
                                 });
                                 console.log("success");
