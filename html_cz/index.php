@@ -1,28 +1,39 @@
+<?php
+    $url = $_SERVER['HTTP_HOST'];
+	$www   = 'www';
+    $pos = strpos($url, $www);
+
+    if ($pos === false) {
+        header('Location: https://www.tentolesniklid.cz/');
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 
-<html lang="sk">
+<html lang="cz">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Vyhrajte každý týždeň pobyt v pokoji lesa v hodnote 1 600 eur! Alebo závesné kreslo. V období 1. 2. – 28. 3. 2022.">
-    <meta name="keywords" content="tento, súťaž, pokoj">
+    <meta name="description"
+        content="Vyhrajte každý týden pobyt v klidu lesa v hodnotě 40 000 Kč! Nebo závěsné křeslo. V období 1. 2. – 28. 3. 2022.">
+    <meta name="keywords" content="tento, soutěž, klid">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="facebook-domain-verification" content="jrkrb7wt62ph5972yequxvodqdekiw" />
+    <meta name="facebook-domain-verification" content="bgw5h2qk7fz2jsnj6jpb76bezky7tu" />
     <!-- Internal Stylesheet -->
     <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="./assets/css/font.css" rel="stylesheet" type="text/css">
     <link href="./assets/css/plugin.css" rel="stylesheet" type="text/css">
 
-    <title>Tento - Lesný pokoj</title>
+    <title>Tento - Lesní klid</title>
     <!-- External Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <!-- CookieBot Script -->
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="c953b599-8539-4912-b665-3ceb886a70df" data-blockingmode="auto" type="text/javascript"></script>
-
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="c953b599-8539-4912-b665-3ceb886a70df"
+        data-blockingmode="auto" type="text/javascript"></script>
 
     <!-- External Script -->
     <script src="./assets/js/wow.min.js"></script>
@@ -30,19 +41,78 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MM28M6V');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N958K2T');</script>
     <!-- End Google Tag Manager -->
+    <!-- Adform Tracking Code BEGIN -->
+    <script type="text/javascript">
+        window._adftrack = Array.isArray(window._adftrack) ? window._adftrack : (window._adftrack ? [window._adftrack] : []);
+        window._adftrack.push({
+            HttpHost: 'track.adform.net',
+            pm: 2547559,
+            divider: encodeURIComponent('|'),
+            pagename: encodeURIComponent('tentolesniklid')
+        });
+        (function () { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://s2.adform.net/banners/scripts/st/trackpoint-async.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();
+    </script>
+
+    <script type="text/javascript">
+        window._adftrack = Array.isArray(window._adftrack) ? window._adftrack : (window._adftrack ? [window._adftrack] : []);
+        window._adftrack.push({
+            HttpHost: 'track.adform.net',
+            pm: 2547559,
+            divider: encodeURIComponent('|'),
+            pagename: encodeURIComponent('tentolesniklid_scroll_formular')
+        });
+        (function () { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://s2.adform.net/banners/scripts/st/trackpoint-async.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();
+    </script>
+
+
+    <script type="text/javascript">
+        window._adftrack = Array.isArray(window._adftrack) ? window._adftrack : (window._adftrack ? [window._adftrack] : []);
+        window._adftrack.push({
+            HttpHost: 'track.adform.net',
+            pm: 2547559,
+            divider: encodeURIComponent('|'),
+            pagename: encodeURIComponent('tentolesniklid_thankyou')
+        });
+        (function () { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://s2.adform.net/banners/scripts/st/trackpoint-async.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();
+
+    </script>
 
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MM28M6V"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N958K2T" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+    <noscript>
+        <p style="margin:0;padding:0;border:0;">
+            <img src="https://track.adform.net/Serving/TrackPoint/?pm=2547559&ADFPageName=tentolesniklid&ADFdivider=|"
+                width="1" height="1" alt="" />
+        </p>
+    </noscript>
+    <noscript>
+        <p style="margin:0;padding:0;border:0;">
+            <img src="https://track.adform.net/Serving/TrackPoint/?pm=2547559&ADFPageName=tentolesniklid_scroll_formular&ADFdivider=|"
+                width="1" height="1" alt="" />
+        </p>
+    </noscript>
+
+    <noscript>
+        <p style="margin:0;padding:0;border:0;">
+            <img src="https://track.adform.net/Serving/TrackPoint/?pm=2547559&ADFPageName=tentolesniklid_thankyou&ADFdivider=|"
+                width="1" height="1" alt="" />
+        </p>
+    </noscript>
+
     <!-- End Google Tag Manager (noscript) -->
     <header class="header-contain">
         <div class="logo-img">
@@ -61,39 +131,38 @@
 
         <div class="mobile-menu mhide" id="mobile-menu">
             <ul class="list-items">
-                <li class="list-item"><a href="/#jak-soutezit">Ako súťažiť</a></li>
-                <li class="list-item"><a href="/#Vyplnte-formular">Vyplňte formulár</a></li>
+                <li class="list-item"><a href="/#jak-soutezit">Jak soutěžit</a></li>
+                <li class="list-item"><a href="/#Vyplnte-formular">Vyplňte formulář</a></li>
                 <li class="list-item"><a href="/#o-tento">O Tento</a></li>
-                <li class="list-item"><a href="/#vyherci">Výhercovia</a></li>
-                <li class="list-item"><a href="https://www.tentolesnypokoj.sk/assets/pdf/Tento_pravidla_SK.pdf" target="_blank">Pravidlá</a></li>
+                <li class="list-item"><a href="/#vyherci">Výherci </a></li>
+                <li class="list-item"><a href="https://www.tentolesniklid.cz/assets/pdf/Tento_pravidla_CZ.pdf"
+                        target="_blank">Pravidla</a></li>
                 <li class="list-item"><a href="/#kontakt">Kontakt</a></li>
-            </ul>
             </ul>
         </div>
 
         <div class="menu">
-            <a href="/#jak-soutezit">Ako súťažiť </a>
-            <a href="/#Vyplnte-formular">Vyplňte formulár</a>
+            <a href="/#jak-soutezit">Jak soutěžit </a>
+            <a href="/#Vyplnte-formular">Vyplňte formulář</a>
             <a href="/#o-tento">O Tento</a>
-            <a href="/#vyherci">Výhercovia</a>
-            <a href="https://www.tentolesnypokoj.sk/assets/pdf/Tento_pravidla_SK.pdf" target="_blank">Pravidlá</a>
+            <a href="/#vyherci">Výherci</a>
+            <a href="https://www.tentolesniklid.cz/assets/pdf/Tento_pravidla_CZ.pdf" target="_blank">Pravidla</a>
             <a href="/#kontakt">Kontakt</a>
         </div>
     </header>
     <main class="index">
         <span class="anchor" id="index"></span>
         <section class="banner-img">
-            <h2 class="banner-text-sm  wow fadeInUp" data-wow-delay="0.3s">Vyhrajte každý týždeň <br> pobyt v&nbsp;pokoji
-                lesa <br>v hodnote 1 600 eur!</h2>
-            <h4 class="banner-text-bi wow fadeInUp" data-wow-delay="0.6s">Alebo závesné kreslo.</h4>
+            <h2 class="banner-text-sm  wow fadeInUp" data-wow-delay="0.3s">Vyhrajte každý týden <br> pobyt v&nbsp;klidu
+                lesa <br>v hodnotě 40 000 Kč!</h2>
+            <h4 class="banner-text-bi wow fadeInUp" data-wow-delay="0.6s">Nebo závěsné křeslo.</h4>
             <div class="banner-text-rd wow fadeInUp" data-wow-delay="0.9s">
-                <div>Súťažíme každý
-                    <br>týždeň o:<br> 1x pobyt v&nbsp;lese<br>5x závesné kreslo
-                </div>
+                <div>Soutěžíme<br>každý týden o:<br> 1x pobyt v lese<br>5x závěsné křeslo</div>
                 <div>V období<br>1. 2. – 28. 3.<br>2022</div>
             </div>
-            <div class="banner-text-end wow fadeInUp" data-wow-delay="1.2s">1. týždeň súťaže prebieha <label>1. 2. - 7. 2. 2022,</label><br>
-                výhercov losujeme <label>8. 2. 2022.</label>
+            <div class="banner-text-end wow fadeInUp" data-wow-delay="1.2s">1. týden soutěže probíhá <label>1. 2. - 7.
+                    2. 2022,</label><br>
+                výherce losujeme <label>8. 2. 2022.</label>
             </div>
             <div class="sheep">
                 <img src="./assets/images/Lamb.png">
@@ -108,19 +177,19 @@
         <span class="anchor" id="jak-soutezit"></span>
         <section class="sec1" id="jak-soutezit-sec">
             <div class="sec1-title wow fadeInUp" data-wow-delay="0.3s">
-                Ako súťažiť?
+                Jak soutěžit?
             </div>
             <div class="sec1-content wow fadeInUp" data-wow-delay="0.3s">
                 <div>
                     <div class="compete-bule">
                         <div class="compete-title">
-                            Kúpte
+                            Kupte
                         </div>
                         <div class="compete-text">
-                            akýkoľvek 3-vrstvový
+                            jakýkoliv 3vrstvý
                         </div>
                         <div class="compete-text">
-                            Tento toaletný papier
+                            Tento toaletní papír
                         </div>
                         <div class="compete-sheep">
                             <img src="./assets/images/tento.png">
@@ -132,10 +201,10 @@
                             Nahrajte
                         </div>
                         <div class="compete-text">
-                            kód z účtenky nižšie v&nbsp;sekcii
+                            kód z účtenky níže v&nbsp;sekci
                         </div>
                         <div class="compete-text">
-                            Vyplňte formulár
+                            Vyplňte formulář
                         </div>
                         <div class="compete-bill">
                             <img src="./assets/images/Bill 2.png">
@@ -149,7 +218,7 @@
                         Vyhrajte
                     </div>
                     <div>
-                        týždenný pobyt v&nbsp;udržateľnom <br>ubytovaní v&nbsp;slovenskom lese<br> alebo závesné kreslo
+                        týdenní pobyt v&nbsp;udržitelném <br>ubytování v&nbsp;českém lese<br> nebo závěsné křeslo
                     </div>
                     <div>
                         <img src="./assets/images/sec1-right.png">
@@ -158,9 +227,9 @@
                         <img class="m-t-5m" src="./assets/images/Block 2_ How TO.png">
                     </div>
                     <div>
-                        Viac o ubytovaní
-                        <a href="https://www.wildhouse.sk/helios/" target="_blank">
-                            <p>tu.</p>
+                        Více o ubytování
+                        <a href="https://www.twofingers.cz/pomnenka.html" target="_blank">
+                            <p>zde.</p>
                         </a>
                     </div>
                 </div>
@@ -175,13 +244,13 @@
         <span class="anchor" id="Vyplnte-formular"></span>
         <section class="sec2">
             <div class="sec2-title wow fadeInUp" data-wow-delay="0.3s">
-                Vyplňte formulár
+                Vyplňte formulář
             </div>
             <div class="sec2-content wow fadeInUp" data-wow-delay="0.3s">
                 <table class="data-in">
                     <tr>
-                        <td>Meno:</td>
-                        <td>Priezvisko:</td>
+                        <td>Jméno:</td>
+                        <td>Příjmení:</td>
                     </tr>
                     <tr>
                         <td><input id="firstName"></td>
@@ -189,7 +258,7 @@
                     </tr>
                     <tr>
                         <td>E-mail:</td>
-                        <td>Telefón: </td>
+                        <td>Telefon: </td>
                     </tr>
                     <tr>
                         <td><input id="email" onfocusout="mailValidate()"></td>
@@ -199,42 +268,44 @@
                         <td>PSČ:</td>
                         <td class="receipt-pc">Kód z účtenky:
                             <div class="notification">
-                                Zadajte, prosím, <span class="f-m">posledné 4 znaky kódu DKP</span> na vašej
-                                účtenke,<br>
-                                či posledné 4 čísla elektronickej faktúry v prípade online nákupu.<br>
-                                Účtenku si schovajte, v prípade výhry ju budete potrebovať.
+                                Zadejte prosím <span class="f-m">poslední 4 znaky kódu BKP</span> na vaší účtence,<br>
+                                či poslední 4 čísla elektronické faktury v případě online nákupů.<br>
+                                Účtenku si schovejte, v případě výhry jí budete potřebovat.
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td><input id="zipCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="5"></td>
+                        <td><input id="zipCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+                                maxlength="5"></td>
                         <td><input id="receiptCode" type="text" maxlength="4">
                         </td>
                     </tr>
                     <tr>
-                        <td><button class="submit" onclick="send()">Odoslať</button> </td>
+                        <td><button class="submit" onclick="send()">Odeslat</button> </td>
                         <td>
                             <div><input type="checkbox" name="check" id="check" class="question-check">
-                                <label for="check">Súhlasím s&nbsp;<a href="https://www.tentolesnypokoj.sk/assets/pdf/Tento_pravidla_SK.pdf" target="_blank">pravidlami súťaže.</a></label>
+                                <label for="check">Souhlasím s&nbsp;<a
+                                        href="https://www.tentolesniklid.cz/assets/pdf/Tento_pravidla_CZ.pdf"
+                                        target="_blank">pravidly soutěže.</a></label>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td class="error" id="error">
-                            Vyplňte polia označené červenou farbou a kliknite na "Odoslať".
+                            Vyplňte prosím červeně označená políčka a klikněte na 'Odeslat'.
                         </td>
                     </tr>
                 </table>
 
                 <table class="mobile-in">
                     <tr>
-                        <td>Meno:</td>
+                        <td>Jméno:</td>
                     </tr>
                     <tr>
                         <td><input id="m-firstName"></td>
                     </tr>
                     <tr>
-                        <td>Priezvisko:</td>
+                        <td>Příjmení:</td>
                     </tr>
                     <tr>
                         <td><input id="m-lastName"></td>
@@ -246,23 +317,25 @@
                         <td><input id="m-email" onfocusout="mailValidate()"></td>
                     </tr>
                     <tr>
-                        <td>Telefón: </td>
+                        <td>Telefon: </td>
                     </tr>
                     <tr>
-                        <td><input id="m-phone" type="text" oninput="this.value=this.value.replace(/[^0-9\+]/g,'');"></td>
+                        <td><input id="m-phone" type="text" oninput="this.value=this.value.replace(/[^0-9\+]/g,'');">
+                        </td>
                     </tr>
                     <tr>
                         <td>PSČ</td>
                     </tr>
                     <tr>
-                        <td><input id="m-zipCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="5">
+                        <td><input id="m-zipCode" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+                                maxlength="5">
                         </td>
                     </tr>
                     <tr>
                         <td class="receipt">Kód z účtenky:
                             <div class="notification">
-                                Zadajte, prosím, <span class="f-m">posledné 4 znaky kódu DKP</span> na vašej účtenke<br>
-                                Účtenku si schovajte, v prípade výhry ju budete potrebovať.
+                                Zadejte prosím <span class="f-m">poslední 4 znaky kódu BKP</span> na vaší účtence.<br>
+                                Účtenku si schovejte, v případě výhry jí budete potřebovat.
                             </div>
                         </td>
                     </tr>
@@ -270,19 +343,21 @@
                         <td><input id="m-receiptCode" type="text" maxlength="4"></td>
                     </tr>
                     <tr>
-                        <td><button class="mobile-submit" onclick="sendMobile()">Odoslať</button> </td>
+                        <td><button class="mobile-submit" onclick="sendMobile()">Odeslat</button> </td>
                     </tr>
                     <tr>
                         <td>
                             <div>
                                 <input type="checkbox" name="m-check1" id="m-check1" class="question-check"><label
-                                    for="m-check1">Súhlasím s <a href="https://www.tentolesnypokoj.sk/assets/pdf/Tento_pravidla_SK.pdf" target="_blank">pravidlami súťaže.</a></label>
+                                    for="m-check1">Souhlasím s <a
+                                        href="https://www.tentolesniklid.cz/assets/pdf/Tento_pravidla_CZ.pdf"
+                                        target="_blank">pravidly soutěže.</a></label>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td class="error" id="m-error">
-                            Vyplňte polia označené červenou farbou a kliknite na "Odoslať".
+                            Vyplňte prosím červeně označená políčka a klikněte na 'Odeslat'.
                         </td>
                     </tr>
                 </table>
@@ -302,11 +377,11 @@
                         <div>
                             <img src="./assets/images/Tento-Logo.png">
                         </div>
-                        <div id="form-success" class="modal-title">Ďakujeme vám za účasť v súťaži.</div>
-                        <div class="modal-contain">Potvrdenie o doručení dostanete e-mailom. <br> Ak nie, kontaktujte
+                        <div class="modal-title">Děkujeme Vám za účast v soutěži.</div>
+                        <div class="modal-contain">Na e-mail Vám přijde potvrzení o doručení.<br>Pokud ne, kontaktujte
                             nás na &nbsp; <a
-                                href="mailto: info@tentolesnypokoj.sk"><span>info@tentolesnypokoj.sk</span></a></div>
-                        <div class="modal-contain">Účtenku si schovajte, v prípade výhry ju budete potrebovať.</div>
+                                href="mailto: info@tentolesniklid.cz"><span>info@tentolesniklid.cz</span></a></div>
+                        <div class="modal-contain">Účtenku, prosím, uschovejte pro případ výhry.</div>
                     </div>
                 </div>
             </div>
@@ -314,64 +389,71 @@
         <span class="anchor" id="o-tento"></span>
         <section class="sec3">
             <div class="sec1-title wow fadeInUp" data-wow-delay="0.3s">
-                O značke Tento
+                O značce Tento
             </div>
             <div class="sec3-title-content wow fadeInUp" data-wow-delay="0.3s">
-                <div>Víťaz voľby spotrebiteľov</div>
-                <img src="./assets/images/VS 21 logo sk outline_kruh 1.png">
+                <div>Vítěz Volby spotřebitelů</div>
+                <img src="./assets/images/VS 21 logo CZ outline_kruh 1.png">
             </div>
             <div class="move wow fadeInUp" data-wow-delay="0.3s">
-                <iframe class="fream" src="https://www.youtube.com/embed/RCOBXWnetng" frameborder="0" allowfullscreen
+                <iframe class="fream" src="https://www.youtube.com/embed/xkf3Xj75FfQ" frameborder="0" allowfullscreen
                     ng-show="showvideo">
                 </iframe>
             </div>
             <div class="brand row wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-md-6 col-lg-3">
                     <img src="./assets/images/image 1.png">
-                    <div class="brand-title" style="padding: 0px 10px">O lesy sa staráme.</div>
-                    <div class="brand-content" style="padding: 0px 10px">Je pre nás dôležité, aby naše drevo pochádzalo
-                        z&nbsp;udržateľne
-                        spravovaných lesov, ktoré rastú viac, než&nbsp;sú využívané, a&nbsp;v&nbsp;ktorých je udržiavaná biodiverzita.
-                        So&nbsp;surovinami zaobchádzame šetrne.</div>
+                    <div class="brand-title">O lesy se staráme.</div>
+                    <div class="brand-content">Je pro nás důležité, aby naše dřevo pocházelo z&nbsp;udržitelně
+                        spravovaných
+                        lesů, které rostou více, než jsou využívány, a v&nbsp;nichžje udržována biodiverzita.
+                        Se surovinami zacházímešetrně.
+                    </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <img src="./assets/images/image 2.png">
-                    <div class="brand-title" style="padding: 0px 10px">Udržateľnosť v&nbsp;každej fáze výroby.</div>
-                    <div class="brand-content" style="padding: 0px 10px">Udržateľnosť zohľadňujeme pri&nbsp;každom kroku
-                        našej výroby. Preto optimalizujeme využívanie vody a&nbsp;energie, aby boli čo najefektívnejšie.
-                    </div>
+                    <div class="brand-title">Udržitelnost
+                        v každé fázi výroby.</div>
+                    <div class="brand-content">Udržitelnost zohledňujeme
+                        při každém kroku naší výroby. Proto také optimalizujeme
+                        využívání vody a&nbsp;energie, aby bylo co nejefektivnější.</div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <img src="./assets/images/image 3.png">
-                    <div class="brand-title" style="padding: 0px 10px">Na obaloch záleží.</div>
-                    <div class="brand-content" style="padding: 0px 10px">Dbáme na&nbsp;to, aby&nbsp;aj naše obaly boli udržateľné.
-                        Za&nbsp;posledné dva roky sme o&nbsp;17&nbsp;% znížili podiel plastov v&nbsp;obaloch, v&nbsp;ktorých sú balené výrobky
-                        značky Tento. Do&nbsp;roku 2030 plánujeme mať ponuku našich produktov bez plastov.</div>
+                    <div class="brand-title">Na obalech záleží.</div>
+                    <div class="brand-content">Dbáme na to, aby také naše
+                        obaly byly udržitelné. Za poslední dva roky jsme
+                        o&nbsp;17&nbsp;% snížili podíl plastů v&nbsp;obalech,
+                        ve&nbsp;kterých jsou baleny výrobky
+                        naší značky. Naše obalyjsou 100&nbsp;% recyklovatelné.
+                    </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <img src="./assets/images/image 4.png">
-                    <div class="brand-title" style="padding: 0px 10px">Vyrábané blízko vás - lokálne.</div>
-                    <div class="brand-content" style="padding: 0px 10px">Všetky produkty vyrábame v&nbsp;rozumnej
-                        vzdialenosti od&nbsp;zdrojov surovín a&nbsp;od&nbsp;našich odberateľov.
-                        Menšia vzdialenosť znamená menšiu potrebu prepravy tovaru a&nbsp;tým pádom aj zníženie emisií CO2.
-                    </div>
+                    <div class="brand-title">Vyráběné blízko vás.</div>
+                    <div class="brand-content">Všechny produkty vyrábíme
+                        v&nbsp;rozumné vzdálenosti od&nbsp;zdrojů
+                        surovin a&nbsp;od&nbsp;našich odběratelů.
+                        Menší vzdálenost znamená
+                        menší potřebu přepravy zboží
+                        a&nbsp;tím pádem i&nbsp;snížení emisí CO2.</div>
                 </div>
             </div>
         </section>
         <span class="anchor" id="vyherci"></span>
         <section class="sec5">
             <div class="sec1-title wow fadeInUp" data-wow-delay="0.3s">
-                Výhercovia
+                Výherci
             </div>
             <div class="sec5-content wow fadeInUp" data-wow-delay="0.3s">
-                <a class="sec5-content" data-toggle="collapse" data-target="#vyherci-display">Zoznam výhercov z 1. týždňa
-                    súťaže
-                    <br class="sp-br" /> (1. 2. – 7. 2. 2022)</a>
+                <a class="sec5-content" data-toggle="collapse" data-target="#vyherci-display">Seznam výherců z 1. týdne
+                    soutěže<br class="sp-br" /> (1. 2. – 7. 2. 2022)</a>
             </div>
 
             <div id="vyherci-display" class="collapse">
                 <div class="sec5-content">
-                    <div class="sec5-content2"><b>Výhercov prvého týždňa súťaže zverejníme vo&nbsp;štvrtok 10.&nbsp;2.&nbsp;2022.</b><br></div>
+                    <div class="sec5-content2"><b>Výherce za první týden soutěže zveřejníme ve&nbsp;čtvrtek
+                            10.&nbsp;2.&nbsp;2022.</b><br></div>
                     <br>
                     <br>
                     <div class="sec5-content2"><b></b><br></div>
@@ -379,7 +461,7 @@
             </div>
             </div>
             <div class="banner-img-next wow fadeInUp" data-wow-delay="0.3s">
-                <a href="#kontakt">
+                <a href="/#kontakt">
                     <span class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules"
                         data-ca3_icon=""></span>
                 </a>
@@ -391,20 +473,20 @@
                 Kontakt
             </div>
             <div>
-                V prípade akýchkoľvek dotazov, či nejasností nás neváhajte kontaktovať.
+                V případě jakýchkoliv dotazů či nejasností nás neváhejte kontaktovat.
             </div>
             <div>
-                <a href="mailto:info@tentolesnypokoj.sk">info@tentolesnypokoj.sk</a>
+                <a href="mailto:info@tentolesniklid.cz">info@tentolesniklid.cz</a>
             </div>
             <div>
-                Informácie o spracovaní osobných údajoch a využitiu cookies nájdete
-                <a href="https://www.metsagroup.com/en/Pages/cookies.aspx" target="_blank"><label>tu.</label></a>
+                Informace o zpracování osobních údajů a využití cookies naleznete
+                <a href="https://www.metsagroup.com/en/Pages/cookies.aspx" target="_blank"><label>zde.</label></a>
             </div>
         </section>
 
         <footer>
             <div class="footer">
-                <a href="http://www.facebook.com/TentoSlovensko/" target="_blank"><img
+                <a href="https://www.facebook.com/TentoCeskaRepublika" target="_blank"><img
                         src="./assets/images/jam_facebook-circle.png"></a>
                 <a href="https://www.instagram.com/tento_czsk/" target="_blank"><img
                         src="./assets/images/akar-icons_instagram-fill.png"></a>
@@ -416,10 +498,7 @@
         <script>
             new WOW().init();
             $(document).ready(function () {
-                var url = window.location.href; 
-                if(url.search("www") == -1)
-                    window.location = "https://www.tentolesnypokoj.sk";
-                
+
                 $('.hamburger').on('click', function (e) {
                     e.stopPropagation();
                     $(".mobile-menu").toggleClass("mhide").toggleClass("mshow");
@@ -446,6 +525,7 @@
             $(document).on('mouseleave', '.receipt-pc', function (e) {
                 $('.receipt-pc').removeClass('active');
             });
+
             $(document).on('click', 'body', function (e) {
                 $('.receipt').removeClass('active');
                 $('.receipt-pc').removeClass('active');
@@ -486,16 +566,16 @@
                 var checkbox = $("#check").is(":checked");
 
                 if (firstName.trim() == "" || lastName.trim() == "" || email == "" || phone == "" || zipCode == "" || zipCode.length != 5 || receiptCode == "" || receiptCode.length != 4) {
-                    document.getElementById("error").innerHTML = "Vyplňte polia označené červenou farbou a kliknite na 'Odoslať'.";
+                    document.getElementById("error").innerHTML = "Vyplňte prosím červeně označená políčka a klikněte na 'Odeslat'.";
                     document.getElementById("error").style.display = "revert";
                 }
                 else {
                     if (!validateEmail(email)) {
-                        document.getElementById("error").innerHTML = "Zadajte prosím správny e-mail."
+                        document.getElementById("error").innerHTML = "Zadejte prosím správný e-mail."
                         document.getElementById("error").style.display = "revert";
                     }
                     else if (checkbox == false) {
-                        document.getElementById("error").innerHTML = "Zaškrtnite prosím: 'Súhlasím s pravidlami súťaže'.";
+                        document.getElementById("error").innerHTML = "Zaškrtněte prosím: 'Souhlasím s pravidly soutěže'.";
                         document.getElementById("error").style.display = "revert";
                     }
                     else {
@@ -512,10 +592,6 @@
                                     data: { firstName: firstName, email: email },// passing the values
                                     success: function (res) {
                                         console.log("success message");
-                                    },
-                                    error: function (err) {
-                                        console.log(111);
-                                        console.log(err);
                                     }
                                 });
                                 console.log("success");
@@ -548,16 +624,16 @@
                 var mreceiptCode = document.getElementById("m-receiptCode").value;
                 var mcheckbox1 = $("#m-check1").is(":checked");
                 if (mfirstName.trim() == "" || mlastName.trim() == "" || memail == "" || mphone == "" || mzipCode == "" || mzipCode.length != 5 || mreceiptCode == "" || mreceiptCode.length != 4) {
-                    document.getElementById("m-error").innerHTML = "Vyplňte polia označené červenou farbou a kliknite na 'Odoslať'.";
+                    document.getElementById("m-error").innerHTML = "Vyplňte prosím červeně označená políčka a klikněte na 'Odeslat'.";
                     document.getElementById("m-error").style.display = "revert";
                 }
                 else {
                     if (!validateEmail(memail)) {
-                        document.getElementById("m-error").innerHTML = "Zadajte prosím správny e-mail."
+                        document.getElementById("m-error").innerHTML = "Zadejte prosím správný e-mail."
                         document.getElementById("m-error").style.display = "revert";
                     }
                     else if (mcheckbox1 == false) {
-                        document.getElementById("m-error").innerHTML = "Zaškrtnite prosím: 'Súhlasím s pravidlami súťaže'.";
+                        document.getElementById("m-error").innerHTML = "Zaškrtněte prosím: 'Souhlasím s pravidly soutěže'.";
                         document.getElementById("m-error").style.display = "revert";
                     }
                     else {
