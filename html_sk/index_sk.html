@@ -65,7 +65,7 @@
                 <li class="list-item"><a href="/#Vyplnte-formular">Vyplňte formulár</a></li>
                 <li class="list-item"><a href="/#o-tento">O Tento</a></li>
                 <li class="list-item"><a href="/#vyherci">Výhercovia</a></li>
-                <li class="list-item"><a href="https://tentolesnypokoj.sk/assets/pdf/Tento_pravidla_SK.pdf" target="_blank">Pravidlá</a></li>
+                <li class="list-item"><a href="https://www.tentolesnypokoj.sk/assets/pdf/Tento_pravidla_SK.pdf" target="_blank">Pravidlá</a></li>
                 <li class="list-item"><a href="/#kontakt">Kontakt</a></li>
             </ul>
             </ul>
@@ -76,7 +76,7 @@
             <a href="/#Vyplnte-formular">Vyplňte formulár</a>
             <a href="/#o-tento">O Tento</a>
             <a href="/#vyherci">Výhercovia</a>
-            <a href="https://tentolesnypokoj.sk/assets/pdf/Tento_pravidla_SK.pdf" target="_blank">Pravidlá</a>
+            <a href="https://www.tentolesnypokoj.sk/assets/pdf/Tento_pravidla_SK.pdf" target="_blank">Pravidlá</a>
             <a href="/#kontakt">Kontakt</a>
         </div>
     </header>
@@ -215,7 +215,7 @@
                         <td><button class="submit" onclick="send()">Odoslať</button> </td>
                         <td>
                             <div><input type="checkbox" name="check" id="check" class="question-check">
-                                <label for="check">Súhlasím s&nbsp;<a href="https://tentolesnypokoj.sk/assets/pdf/Tento_pravidla_SK.pdf" target="_blank">pravidlami súťaže.</a></label>
+                                <label for="check">Súhlasím s&nbsp;<a href="https://www.tentolesnypokoj.sk/assets/pdf/Tento_pravidla_SK.pdf" target="_blank">pravidlami súťaže.</a></label>
                             </div>
                         </td>
                     </tr>
@@ -276,7 +276,7 @@
                         <td>
                             <div>
                                 <input type="checkbox" name="m-check1" id="m-check1" class="question-check"><label
-                                    for="m-check1">Súhlasím s <a href="https://tentolesnypokoj.sk/assets/pdf/Tento_pravidla_SK.pdf" target="_blank">pravidlami súťaže.</a></label>
+                                    for="m-check1">Súhlasím s <a href="https://www.tentolesnypokoj.sk/assets/pdf/Tento_pravidla_SK.pdf" target="_blank">pravidlami súťaže.</a></label>
                             </div>
                         </td>
                     </tr>
@@ -302,7 +302,7 @@
                         <div>
                             <img src="./assets/images/Tento-Logo.png">
                         </div>
-                        <div class="modal-title">Ďakujeme vám za účasť v súťaži.</div>
+                        <div id="form-success" class="modal-title">Ďakujeme vám za účasť v súťaži.</div>
                         <div class="modal-contain">Potvrdenie o doručení dostanete e-mailom. <br> Ak nie, kontaktujte
                             nás na &nbsp; <a
                                 href="mailto: info@tentolesnypokoj.sk"><span>info@tentolesnypokoj.sk</span></a></div>
@@ -416,6 +416,10 @@
         <script>
             new WOW().init();
             $(document).ready(function () {
+                var url = window.location.href; 
+                if(url.search("www") == -1)
+                    window.location = "https://www.tentolesnypokoj.sk";
+                
                 $('.hamburger').on('click', function (e) {
                     e.stopPropagation();
                     $(".mobile-menu").toggleClass("mhide").toggleClass("mshow");

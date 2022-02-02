@@ -56,13 +56,21 @@
             <div class="cz-content">
                 <div class="flag"><img src="./assets/images/SK_Flag.png"></div>
                 <div class="cz-title">Súťažte na&nbsp;Slovensku</div>
-		<a href="https://tentolesnypokoj.sk">
+		<a href="https://www.tentolesnypokoj.sk">
 
                 <button class="button1">vstúpiť</button>
 		</a>
-                <div class="cz-contact"> <a href="https://tentolesnypokoj.sk">www.tentolesnypokoj.sk</a></div>
+                <div class="cz-contact"> <a href="https://www.tentolesnypokoj.sk">www.tentolesnypokoj.sk</a></div>
             </div>
         </div>
+
+        <script>
+            $(document).ready(function () {
+                var url = window.location.href; 
+                if(url.search("www") == -1)
+                    window.location = "https://www.vyhrajtestento.eu";
+            });
+        </script>
     </main>
     </body>
 </html>

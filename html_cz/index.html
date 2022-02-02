@@ -76,42 +76,6 @@
 
     </script>
 
-    <!-- Global site tag (gtag.js) - Google Marketing Platform -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=DC-11587118"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'DC-11587118');
-    </script>
-
-    <script>
-        gtag('event', 'conversion', {
-            'allow_custom_scripts': true,
-            'send_to': 'DC-11587118/odesl0/odesl0+standard'
-        });
-    </script>
-    <!-- End of global snippet: Please do not remove -->
-
-    <!-- Global site tag (gtag.js) - Google Marketing Platform -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=DC-11587118"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'DC-11587118');
-    </script>
-    <script>
-        gtag('event', 'conversion', {
-            'allow_custom_scripts': true,
-            'u1': '[url_site]',
-            'send_to': 'DC-11587118/remar0/all_p0+standard'
-        });
-    </script>
-    <!-- End of global snippet: Please do not remove -->
-
 </head>
 
 <body>
@@ -139,15 +103,6 @@
         </p>
     </noscript>
 
-    <noscript>
-        <img src="https://ad.doubleclick.net/ddm/activity/src=11587118;type=odesl0;cat=odesl0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1?"
-            width="1" height="1" alt="" />
-    </noscript>
-
-    <noscript>
-        <img src="https://ad.doubleclick.net/ddm/activity/src=11587118;type=remar0;cat=all_p0;u1=[url_site];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1?"
-            width="1" height="1" alt="" />
-    </noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header class="header-contain">
         <div class="logo-img">
@@ -170,7 +125,7 @@
                 <li class="list-item"><a href="/#Vyplnte-formular">Vyplňte formulář</a></li>
                 <li class="list-item"><a href="/#o-tento">O Tento</a></li>
                 <li class="list-item"><a href="/#vyherci">Výherci </a></li>
-                <li class="list-item"><a href="https://tentolesniklid.cz/assets/pdf/Tento_pravidla_CZ.pdf"
+                <li class="list-item"><a href="https://www.tentolesniklid.cz/assets/pdf/Tento_pravidla_CZ.pdf"
                         target="_blank">Pravidla</a></li>
                 <li class="list-item"><a href="/#kontakt">Kontakt</a></li>
             </ul>
@@ -181,7 +136,7 @@
             <a href="/#Vyplnte-formular">Vyplňte formulář</a>
             <a href="/#o-tento">O Tento</a>
             <a href="/#vyherci">Výherci</a>
-            <a href="https://tentolesniklid.cz/assets/pdf/Tento_pravidla_CZ.pdf" target="_blank">Pravidla</a>
+            <a href="https://www.tentolesniklid.cz/assets/pdf/Tento_pravidla_CZ.pdf" target="_blank">Pravidla</a>
             <a href="/#kontakt">Kontakt</a>
         </div>
     </header>
@@ -320,7 +275,7 @@
                         <td>
                             <div><input type="checkbox" name="check" id="check" class="question-check">
                                 <label for="check">Souhlasím s&nbsp;<a
-                                        href="https://tentolesniklid.cz/assets/pdf/Tento_pravidla_CZ.pdf"
+                                        href="https://www.tentolesniklid.cz/assets/pdf/Tento_pravidla_CZ.pdf"
                                         target="_blank">pravidly soutěže.</a></label>
                             </div>
                         </td>
@@ -385,7 +340,7 @@
                             <div>
                                 <input type="checkbox" name="m-check1" id="m-check1" class="question-check"><label
                                     for="m-check1">Souhlasím s <a
-                                        href="https://tentolesniklid.cz/assets/pdf/Tento_pravidla_CZ.pdf"
+                                        href="https://www.tentolesniklid.cz/assets/pdf/Tento_pravidla_CZ.pdf"
                                         target="_blank">pravidly soutěže.</a></label>
                             </div>
                         </td>
@@ -533,6 +488,10 @@
         <script>
             new WOW().init();
             $(document).ready(function () {
+                var url = window.location.href; 
+                if(url.search("www") == -1)
+                    window.location = "https://www.tentolesniklid.cz";
+
                 $('.hamburger').on('click', function (e) {
                     e.stopPropagation();
                     $(".mobile-menu").toggleClass("mhide").toggleClass("mshow");
